@@ -387,7 +387,7 @@ def ui_analyze_match_full_auto(question: str, fixture_id: str, matches_state: li
             pass
 
 
-            mode = _detect_stats_mode(question)
+    mode = _detect_stats_mode(question)
 
     # 모드별 프롬프트 생성
     llm, chain = _build_prompt_for_mode(mode, question, ctx_json, max_tokens=2000)

@@ -1,13 +1,16 @@
 # 분석.py
 from typing import List, Tuple
 import os, html
-import requests, json, re
-from datetime import datetime, timezone, timedelta
+import requests
+from datetime import datetime
+from dotenv import load_dotenv
 try:
     from zoneinfo import ZoneInfo
 except Exception:
     ZoneInfo = None
 from typing import List, Dict, Any, Tuple, Optional
+
+load_dotenv()
 API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 API_FOOTBALL_KEY  = os.getenv("APIFOOTBALL_KEY")  # 환경변수에 키 저장
 
