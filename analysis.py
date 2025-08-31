@@ -9,7 +9,7 @@ except Exception:
     ZoneInfo = None
 from typing import List, Dict, Any, Tuple, Optional
 API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
-API_FOOTBALL_KEY  = "4b7dfa9544aef01502de1d63e9e5cf08"#os.getenv("APIFOOTBALL_KEY")  # 환경변수에 키 저장
+API_FOOTBALL_KEY  = os.getenv("APIFOOTBALL_KEY")  # 환경변수에 키 저장
 
 # "team.players.0.name" 형태로 평탄화
 def _flatten(obj: Any, parent: str = "", sep: str = ".") -> Dict[str, Any]:
