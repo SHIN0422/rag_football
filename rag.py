@@ -655,7 +655,7 @@ def init_reranker_from_config(cfg: dict):
     if CrossEncoder is None:
         print("[reranker] sentence-transformers 미설치 → 건너뜀")
         return
-    model = cfg.get("reranker_model", "cross-encoder/ms-marco-MiniLM-L-6-v2")
+    model = cfg.get("reranker_model", "BAAI/bge-reranker-base")
     max_len = int(cfg.get("reranker_max_length", 512))
     try:
         reranker = CrossEncoder(model, max_length=max_len)

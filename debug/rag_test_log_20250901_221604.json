@@ -1,0 +1,545 @@
+{
+  "query_original": "맨시티 관련 소식 알려줘",
+  "query_dictionary_translated": "manchester city 관련 소식 알려줘",
+  "query_english_for_bm25": "Please provide news related to Manchester City.",
+  "vector_search_results": [
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "\"I love Manchester - it is my home now - and I love the Manchester City fans. Their support from day",
+      "score": 0.8371727466583252
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Who do Man City play around their Champions League fixtures?\nPremier League games unless stated. All",
+      "score": 0.840897798538208
+    },
+    {
+      "title": "Evangelos Marinakis and Nuno Espirito Santo's Nottingham Forest storm at a lull, for now - Reporter Notebook",
+      "url": "https://www.skysports.com/football/news/11727/13418144/evangelos-marinakis-and-nuno-espirito-santos-nottingham-forest-storm-at-a-lull-for-now-reporter-notebook",
+      "content_preview": "But for now, Sky Sports News has been told that there is an air of \"business as usual\" at the City G",
+      "score": 0.8418020606040955
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Until then, we will be left to ponder what this Man City side, complete with its extravagant summer ",
+      "score": 0.8453747630119324
+    },
+    {
+      "title": "Liverpool influence at Man City? Jamie Carragher explains how former Jurgen Klopp assistant Pep Lijnders may be impacting Pep Guardiola",
+      "url": "https://www.skysports.com/football/news/11095/13414302/liverpool-influence-at-man-city-jamie-carragher-explains-how-former-jurgen-klopp-assistant-pep-lijnders-may-be-impacting-pep-guardiola",
+      "content_preview": "\"City, just off what we've seen on Saturday, if they keep their players fit, they could be really in",
+      "score": 0.8508797883987427
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "give everything to win more trophies and bring more success to City.\"",
+      "score": 0.8692956566810608
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11678/13025496/newcastle-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "November 1/2: West Ham (A), kick-off TBC\nNovember 5: Athletic Club (H),\nChampions League Matchday 4\n",
+      "score": 0.8699496388435364
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "\"But a much-needed win doesn't clear the clouds completely. I think they'll come back in a couple of",
+      "score": 0.8709676265716553
+    },
+    {
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "content_preview": "in circumstances such as the last 20 minutes at Old Trafford.",
+      "score": 0.8743187189102173
+    },
+    {
+      "title": "Premier League 2025/26 fixtures, dates, schedule: Liverpool vs Man Utd live on Sky Sports in October",
+      "url": "https://www.skysports.com/football/news/11095/13415244/premier-league-2025-26-fixtures-dates-schedule-liverpool-vs-man-utd-live-on-sky-sports-in-october",
+      "content_preview": "Man City vs Man Utd - live on Sky Sports, kick-off 4.30pm\nSaturday September 20\nMan Utd vs Chelsea -",
+      "score": 0.8796689510345459
+    },
+    {
+      "title": "Alexander Isak transfer news: Liverpool target breaks silence to declare he 'can't continue' at Newcastle",
+      "url": "https://www.skysports.com/football/news/11095/13414831/alexander-isak-transfer-news-liverpool-target-breaks-silence-to-declare-he-cant-continue-at-newcastle",
+      "content_preview": "\"The reality is that promises were made and the club has known my position for a long time. To now a",
+      "score": 0.880333423614502
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "AC Milan working on Akanji deal - Sky in Italy\nLatest from Sky in Italy's Gianluca Di Marzio:\nAC Mil",
+      "score": 0.8817160725593567
+    },
+    {
+      "title": "Ruben Amorim: Man Utd head coach says he loves his players 'when they put effort in' after dramatic win over Burnley",
+      "url": "https://www.skysports.com/football/news/30778/13421776/ruben-amorim-man-utd-head-coach-says-he-loves-his-players-when-they-put-effort-in-after-dramatic-win-over-burnley",
+      "content_preview": "\"They are humans. At Manchester United everything is the news. Everybody talks about the goalkeeper ",
+      "score": 0.8866868615150452
+    },
+    {
+      "title": "Nicolas Jackson transfer news: Chelsea open to selling striker to Bayern Munich amid talks with Sporting's Conrad Harder",
+      "url": "https://www.skysports.com/football/news/30778/13421517/nicolas-jackson-transfer-news-chelsea-pulling-out-of-strikers-loan-deal-to-bayern-munich",
+      "content_preview": "They are now waiting for a response. Sky Sports News has been reporting that Chelsea would make an o",
+      "score": 0.8886764049530029
+    },
+    {
+      "title": "Premier League 2025/26 fixtures, dates, schedule: Liverpool vs Man Utd live on Sky Sports in October",
+      "url": "https://www.skysports.com/football/news/11095/13415244/premier-league-2025-26-fixtures-dates-schedule-liverpool-vs-man-utd-live-on-sky-sports-in-october",
+      "content_preview": "Saturday August 16\nWolves vs Manchester City - live on Sky Sports , kick-off 5.30pm\nSunday August 17",
+      "score": 0.892851710319519
+    },
+    {
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "content_preview": "\"They were never at their best, but to come here to Manchester, whether it's Old Trafford or Manches",
+      "score": 0.8934422135353088
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Man City's Champions League fixtures\nSeptember 18: Napoli (H), kick-off 8pm\nOctober 1: Monaco (A), k",
+      "score": 0.8943538665771484
+    },
+    {
+      "title": "Premier League transfers: Who could sign before Deadline Day in summer window? Every club's transfer targets assessed",
+      "url": "https://www.skysports.com/football/news/11095/13419284/premier-league-transfers-who-could-sign-before-deadline-day-in-summer-window-every-clubs-transfer-targets-assessed",
+      "content_preview": "MAN CITY\nPositions looking at: Goalkeeper and right-back.\nManchester City's intention remains to kee",
+      "score": 0.8974401950836182
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Man Utd keeping Martinez deal warm\nLatest from Sky Sports News' Dharmesh Sheth:\nManchester United\nin",
+      "score": 0.9008510708808899
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Man Utd keeping Martinez deal warm\nLatest from Sky Sports News' Dharmesh Sheth:\nManchester United\nin",
+      "score": 0.9008510708808899
+    }
+  ],
+  "bm25_search_results": [
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "There was another incident where the club won out in Carlos Tevez at Manchester City. In September 2"
+    },
+    {
+      "title": "Marcelo Saracchi transfer news: Celtic sign Boca Juniors left-back on season-long loan deal",
+      "url": "https://www.skysports.com/football/news/11787/13418703/marcelo-saracchi-transfer-news-celtic-sign-boca-juniors-left-back-on-season-long-loan-deal",
+      "content_preview": "Saracchi, who has nine caps for Uruguay, will provide back-up for Kieran Tierney, which could allow "
+    },
+    {
+      "title": "Brendan Rodgers: Celtic manager insists he won't walk away from club | 'Tried that before, didn't go down well!'",
+      "url": "https://www.skysports.com/football/news/11095/13416172/brendan-rodgers-celtic-manager-insists-he-wont-walk-away-from-club-tried-that-before-didnt-go-down-well",
+      "content_preview": "\"When you lose any player, especially of that calibre, then of course it is a disappointment, but it"
+    },
+    {
+      "title": "Celtic: What next for Brendan Rodgers and the board as fan frustrations increase? | 'We lack ambition'",
+      "url": "https://www.skysports.com/football/news/11787/13415569/celtic-what-next-for-brendan-rodgers-and-the-board-as-fan-frustrations-increase-we-lack-ambition",
+      "content_preview": "The club also secured the signing of teenage forward Callum Osmand on a free from Fulham with Jahmai"
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "Q: I want to be notified when a big sports news story breaks, but I don't want to sign up to receive"
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"After discussing closely with Michelle and her family, we have all agreed that this move will provi"
+    },
+    {
+      "title": "Jack Grealish stars for Everton, Chelsea go top but have striker issues  - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11661/13421460/jack-grealish-stars-for-everton-chelsea-go-top-but-have-striker-issues-premier-league-hits-and-misses",
+      "content_preview": "He assisted two of the goals, taking his tally for the season to four - which is already double that"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Brighton's O'Riley set to join Marseille on loan\nLatest from Sky Sports News' Lyall Thomas:\nBrighton"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Brighton's O'Riley set to join Marseille on loan\nLatest from Sky Sports News' Lyall Thomas:\nBrighton"
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "The Sky Sports mobile app will keep you up to date with the latest news from your favourite sports -"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11741/13279295/brighton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+      "content_preview": "Brighton's O'Riley set for Marseille medical\nLatest from Sky Sports News' Lyall Thomas:\nBrighton\n’s\n"
+    },
+    {
+      "title": "Liverpool a test of depth for Arsenal but Eberechi Eze and Noni Madueke ease Bukayo Saka and Martin Odegaard worry",
+      "url": "https://www.skysports.com/football/news/11670/13419258/liverpool-a-test-of-depth-for-arsenal-but-eberechi-eze-and-noni-madueke-ease-bukayo-saka-and-martin-odegaard-worry",
+      "content_preview": "It could be argued that, in Gyokeres and Eze, only two of Arsenal's seven signings provide obvious u"
+    },
+    {
+      "title": "Xavi Simons: Tottenham Hotspur register interest in RB Leipzig midfielder and Chelsea target",
+      "url": "https://www.skysports.com/football/news/11095/13419420/xavi-simons-tottenham-hotspur-register-interest-in-rb-leipzig-midfielder-and-chelsea-target",
+      "content_preview": "The midfield trio he formed with Rodrigo Bentancur and Pape Sarr - arguably the most impressive play"
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Kai Havertz's injury has added to the onus on Gyokeres' shoulders but this was exactly the response "
+    },
+    {
+      "title": "Omari Hutchinson and James McAtee: Nottingham Forest sign Ipswich forward and Man City midfielder",
+      "url": "https://www.skysports.com/football/news/11727/13412048/omari-hutchinson-and-james-mcatee-nottingham-forest-sign-ipswich-forward-and-man-city-midfielder",
+      "content_preview": "McAtee scored seven times in 34 appearances for his boyhood club Manchester City. He enjoyed two suc"
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Follow an EFL club? Track the latest news from the Championship, League One and League Two . For WSL"
+    },
+    {
+      "title": "Jack Grealish stars for Everton, Chelsea go top but have striker issues  - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11661/13421460/jack-grealish-stars-for-everton-chelsea-go-top-but-have-striker-issues-premier-league-hits-and-misses",
+      "content_preview": "Within moments of the injury news being confirmed, Sky Sports News reported Chelsea would be pulling"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11781/13176154/scottish-premiership-news-transfers-rumours-gossip-and-more",
+      "content_preview": "Anderlecht hope to sign striker before allowing Dolberg to leave\nLatest from Sky Sports News' Anthon"
+    },
+    {
+      "title": "Xavi Simons transfer latest: Tottenham sign attacker from RB Leipzig in deal worth £51m",
+      "url": "https://www.skysports.com/football/news/30778/13420373/xavi-simons-transfer-latest-tottenham-sign-attacker-from-rb-leipzig-in-deal-worth-51m",
+      "content_preview": "There are some gifted players around, individuals able to provide that spark, but finding those capa"
+    },
+    {
+      "title": "Xavi Simons to Tottenham: RB Leipzig goals and assists show pedigree - Spurs might need to build the team around him",
+      "url": "https://www.skysports.com/football/news/11095/13403318/xavi-simons-to-tottenham-rb-leipzig-goals-and-assists-show-pedigree-spurs-might-need-to-build-the-team-around-him",
+      "content_preview": "There are some gifted players around, individuals able to provide that spark, but finding those capa"
+    }
+  ],
+  "rrf_fused_candidates": [
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Brighton's O'Riley set to join Marseille on loan\nLatest from Sky Sports News' Lyall Thomas:\nBrighton",
+      "rrf_score": 0.02919863597612958
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Man Utd keeping Martinez deal warm\nLatest from Sky Sports News' Dharmesh Sheth:\nManchester United\nin",
+      "rrf_score": 0.025158227848101268
+    },
+    {
+      "title": "Xavi Simons transfer latest: Tottenham sign attacker from RB Leipzig in deal worth £51m",
+      "url": "https://www.skysports.com/football/news/30778/13420373/xavi-simons-transfer-latest-tottenham-sign-attacker-from-rb-leipzig-in-deal-worth-51m",
+      "content_preview": "There are some gifted players around, individuals able to provide that spark, but finding those capa",
+      "rrf_score": 0.025158227848101268
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "\"I love Manchester - it is my home now - and I love the Manchester City fans. Their support from day",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "There was another incident where the club won out in Carlos Tevez at Manchester City. In September 2",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Who do Man City play around their Champions League fixtures?\nPremier League games unless stated. All",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Marcelo Saracchi transfer news: Celtic sign Boca Juniors left-back on season-long loan deal",
+      "url": "https://www.skysports.com/football/news/11787/13418703/marcelo-saracchi-transfer-news-celtic-sign-boca-juniors-left-back-on-season-long-loan-deal",
+      "content_preview": "Saracchi, who has nine caps for Uruguay, will provide back-up for Kieran Tierney, which could allow ",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Evangelos Marinakis and Nuno Espirito Santo's Nottingham Forest storm at a lull, for now - Reporter Notebook",
+      "url": "https://www.skysports.com/football/news/11727/13418144/evangelos-marinakis-and-nuno-espirito-santos-nottingham-forest-storm-at-a-lull-for-now-reporter-notebook",
+      "content_preview": "But for now, Sky Sports News has been told that there is an air of \"business as usual\" at the City G",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Brendan Rodgers: Celtic manager insists he won't walk away from club | 'Tried that before, didn't go down well!'",
+      "url": "https://www.skysports.com/football/news/11095/13416172/brendan-rodgers-celtic-manager-insists-he-wont-walk-away-from-club-tried-that-before-didnt-go-down-well",
+      "content_preview": "\"When you lose any player, especially of that calibre, then of course it is a disappointment, but it",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Until then, we will be left to ponder what this Man City side, complete with its extravagant summer ",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "Celtic: What next for Brendan Rodgers and the board as fan frustrations increase? | 'We lack ambition'",
+      "url": "https://www.skysports.com/football/news/11787/13415569/celtic-what-next-for-brendan-rodgers-and-the-board-as-fan-frustrations-increase-we-lack-ambition",
+      "content_preview": "The club also secured the signing of teenage forward Callum Osmand on a free from Fulham with Jahmai",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "Liverpool influence at Man City? Jamie Carragher explains how former Jurgen Klopp assistant Pep Lijnders may be impacting Pep Guardiola",
+      "url": "https://www.skysports.com/football/news/11095/13414302/liverpool-influence-at-man-city-jamie-carragher-explains-how-former-jurgen-klopp-assistant-pep-lijnders-may-be-impacting-pep-guardiola",
+      "content_preview": "\"City, just off what we've seen on Saturday, if they keep their players fit, they could be really in",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "Q: I want to be notified when a big sports news story breaks, but I don't want to sign up to receive",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "give everything to win more trophies and bring more success to City.\"",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"After discussing closely with Michelle and her family, we have all agreed that this move will provi",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11678/13025496/newcastle-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "November 1/2: West Ham (A), kick-off TBC\nNovember 5: Athletic Club (H),\nChampions League Matchday 4\n",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "Jack Grealish stars for Everton, Chelsea go top but have striker issues  - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11661/13421460/jack-grealish-stars-for-everton-chelsea-go-top-but-have-striker-issues-premier-league-hits-and-misses",
+      "content_preview": "He assisted two of the goals, taking his tally for the season to four - which is already double that",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "\"But a much-needed win doesn't clear the clouds completely. I think they'll come back in a couple of",
+      "rrf_score": 0.014705882352941176
+    },
+    {
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "content_preview": "in circumstances such as the last 20 minutes at Old Trafford.",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "Premier League 2025/26 fixtures, dates, schedule: Liverpool vs Man Utd live on Sky Sports in October",
+      "url": "https://www.skysports.com/football/news/11095/13415244/premier-league-2025-26-fixtures-dates-schedule-liverpool-vs-man-utd-live-on-sky-sports-in-october",
+      "content_preview": "Man City vs Man Utd - live on Sky Sports, kick-off 4.30pm\nSaturday September 20\nMan Utd vs Chelsea -",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "The Sky Sports mobile app will keep you up to date with the latest news from your favourite sports -",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Alexander Isak transfer news: Liverpool target breaks silence to declare he 'can't continue' at Newcastle",
+      "url": "https://www.skysports.com/football/news/11095/13414831/alexander-isak-transfer-news-liverpool-target-breaks-silence-to-declare-he-cant-continue-at-newcastle",
+      "content_preview": "\"The reality is that promises were made and the club has known my position for a long time. To now a",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11741/13279295/brighton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+      "content_preview": "Brighton's O'Riley set for Marseille medical\nLatest from Sky Sports News' Lyall Thomas:\nBrighton\n’s\n",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "AC Milan working on Akanji deal - Sky in Italy\nLatest from Sky in Italy's Gianluca Di Marzio:\nAC Mil",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "Liverpool a test of depth for Arsenal but Eberechi Eze and Noni Madueke ease Bukayo Saka and Martin Odegaard worry",
+      "url": "https://www.skysports.com/football/news/11670/13419258/liverpool-a-test-of-depth-for-arsenal-but-eberechi-eze-and-noni-madueke-ease-bukayo-saka-and-martin-odegaard-worry",
+      "content_preview": "It could be argued that, in Gyokeres and Eze, only two of Arsenal's seven signings provide obvious u",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "Ruben Amorim: Man Utd head coach says he loves his players 'when they put effort in' after dramatic win over Burnley",
+      "url": "https://www.skysports.com/football/news/30778/13421776/ruben-amorim-man-utd-head-coach-says-he-loves-his-players-when-they-put-effort-in-after-dramatic-win-over-burnley",
+      "content_preview": "\"They are humans. At Manchester United everything is the news. Everybody talks about the goalkeeper ",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Xavi Simons: Tottenham Hotspur register interest in RB Leipzig midfielder and Chelsea target",
+      "url": "https://www.skysports.com/football/news/11095/13419420/xavi-simons-tottenham-hotspur-register-interest-in-rb-leipzig-midfielder-and-chelsea-target",
+      "content_preview": "The midfield trio he formed with Rodrigo Bentancur and Pape Sarr - arguably the most impressive play",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Nicolas Jackson transfer news: Chelsea open to selling striker to Bayern Munich amid talks with Sporting's Conrad Harder",
+      "url": "https://www.skysports.com/football/news/30778/13421517/nicolas-jackson-transfer-news-chelsea-pulling-out-of-strikers-loan-deal-to-bayern-munich",
+      "content_preview": "They are now waiting for a response. Sky Sports News has been reporting that Chelsea would make an o",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Kai Havertz's injury has added to the onus on Gyokeres' shoulders but this was exactly the response ",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Premier League 2025/26 fixtures, dates, schedule: Liverpool vs Man Utd live on Sky Sports in October",
+      "url": "https://www.skysports.com/football/news/11095/13415244/premier-league-2025-26-fixtures-dates-schedule-liverpool-vs-man-utd-live-on-sky-sports-in-october",
+      "content_preview": "Saturday August 16\nWolves vs Manchester City - live on Sky Sports , kick-off 5.30pm\nSunday August 17",
+      "rrf_score": 0.013333333333333334
+    },
+    {
+      "title": "Omari Hutchinson and James McAtee: Nottingham Forest sign Ipswich forward and Man City midfielder",
+      "url": "https://www.skysports.com/football/news/11727/13412048/omari-hutchinson-and-james-mcatee-nottingham-forest-sign-ipswich-forward-and-man-city-midfielder",
+      "content_preview": "McAtee scored seven times in 34 appearances for his boyhood club Manchester City. He enjoyed two suc",
+      "rrf_score": 0.013333333333333334
+    },
+    {
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "content_preview": "\"They were never at their best, but to come here to Manchester, whether it's Old Trafford or Manches",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Follow an EFL club? Track the latest news from the Championship, League One and League Two . For WSL",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Man City's Champions League fixtures\nSeptember 18: Napoli (H), kick-off 8pm\nOctober 1: Monaco (A), k",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "Jack Grealish stars for Everton, Chelsea go top but have striker issues  - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11661/13421460/jack-grealish-stars-for-everton-chelsea-go-top-but-have-striker-issues-premier-league-hits-and-misses",
+      "content_preview": "Within moments of the injury news being confirmed, Sky Sports News reported Chelsea would be pulling",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "Premier League transfers: Who could sign before Deadline Day in summer window? Every club's transfer targets assessed",
+      "url": "https://www.skysports.com/football/news/11095/13419284/premier-league-transfers-who-could-sign-before-deadline-day-in-summer-window-every-clubs-transfer-targets-assessed",
+      "content_preview": "MAN CITY\nPositions looking at: Goalkeeper and right-back.\nManchester City's intention remains to kee",
+      "rrf_score": 0.01282051282051282
+    }
+  ],
+  "final_ranked_documents": [
+    {
+      "rank": 1,
+      "rerank_score": 0.14412598311901093,
+      "title": "Ruben Amorim: Man Utd head coach says he loves his players 'when they put effort in' after dramatic win over Burnley",
+      "url": "https://www.skysports.com/football/news/30778/13421776/ruben-amorim-man-utd-head-coach-says-he-loves-his-players-when-they-put-effort-in-after-dramatic-win-over-burnley",
+      "time": "2025-08-31 20:30:00",
+      "content_preview": "\"They are humans. At Manchester United everything is the news. Everybody talks about the goalkeeper and you can see even when I change the goalkeeper these situations happen. We are in that moment. It"
+    },
+    {
+      "rank": 2,
+      "rerank_score": 0.10250639170408249,
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "time": "2025-08-22 18:21:00",
+      "content_preview": "\"I love Manchester - it is my home now - and I love the Manchester City fans. Their support from day one has been absolutely unbelievable, and I appreciate them a lot. When I think about the trophies "
+    },
+    {
+      "rank": 3,
+      "rerank_score": 0.014077598229050636,
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "time": "2025-08-24 19:05:00",
+      "content_preview": "Until then, we will be left to ponder what this Man City side, complete with its extravagant summer remodel, are truly capable of. Laura Hunter"
+    },
+    {
+      "rank": 4,
+      "rerank_score": 0.012526080012321472,
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "time": "2025-08-18 05:07:00",
+      "content_preview": "in circumstances such as the last 20 minutes at Old Trafford."
+    },
+    {
+      "rank": 5,
+      "rerank_score": 0.008504364639520645,
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "time": "2025-08-22 18:21:00",
+      "content_preview": "give everything to win more trophies and bring more success to City.\""
+    },
+    {
+      "rank": 6,
+      "rerank_score": 0.006645634770393372,
+      "title": "Liverpool influence at Man City? Jamie Carragher explains how former Jurgen Klopp assistant Pep Lijnders may be impacting Pep Guardiola",
+      "url": "https://www.skysports.com/football/news/11095/13414302/liverpool-influence-at-man-city-jamie-carragher-explains-how-former-jurgen-klopp-assistant-pep-lijnders-may-be-impacting-pep-guardiola",
+      "time": "2025-08-19 20:48:00",
+      "content_preview": "\"City, just off what we've seen on Saturday, if they keep their players fit, they could be really in business.\""
+    },
+    {
+      "rank": 7,
+      "rerank_score": 0.006194069981575012,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "time": "2025-08-30 07:50:39",
+      "content_preview": "AC Milan working on Akanji deal - Sky in Italy\nLatest from Sky in Italy's Gianluca Di Marzio:\nAC Milan\nare working on a deal to sign\nManchester City\ndefender\nManuel Akanji\n, according to\nSky in Italy\n"
+    },
+    {
+      "rank": 8,
+      "rerank_score": 0.004258406348526478,
+      "title": "Arsenal's set-piece threat and defensive resilience sees off Man Utd but Mikel Arteta knows they need more",
+      "url": "https://www.skysports.com/football/news/11670/13413599/arsenals-set-piece-threat-and-defensive-resilience-sees-off-man-utd-but-mikel-arteta-knows-they-need-more",
+      "time": "2025-08-18 05:07:00",
+      "content_preview": "\"They were never at their best, but to come here to Manchester, whether it's Old Trafford or Manchester City's ground, is always tough. To get three points is big for Mikel Arteta.\""
+    },
+    {
+      "rank": 9,
+      "rerank_score": 0.0032246876507997513,
+      "title": "Alexander Isak transfer news: Liverpool target breaks silence to declare he 'can't continue' at Newcastle",
+      "url": "https://www.skysports.com/football/news/11095/13414831/alexander-isak-transfer-news-liverpool-target-breaks-silence-to-declare-he-cant-continue-at-newcastle",
+      "time": "2025-08-21 14:02:00",
+      "content_preview": "\"The reality is that promises were made and the club has known my position for a long time. To now act as if these issues are only emerging is misleading."
+    },
+    {
+      "rank": 10,
+      "rerank_score": 0.002495669759809971,
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "time": "2025-08-26 02:35:00",
+      "content_preview": "There was another incident where the club won out in Carlos Tevez at Manchester City. In September 2011, the Argentine refused to come off the bench against Bayern Munich and manager Roberto Mancini i"
+    },
+    {
+      "rank": 11,
+      "rerank_score": 0.0019266916206106544,
+      "title": "Premier League transfers: Who could sign before Deadline Day in summer window? Every club's transfer targets assessed",
+      "url": "https://www.skysports.com/football/news/11095/13419284/premier-league-transfers-who-could-sign-before-deadline-day-in-summer-window-every-clubs-transfer-targets-assessed",
+      "time": "2025-08-28 02:51:00",
+      "content_preview": "MAN CITY\nPositions looking at: Goalkeeper and right-back.\nManchester City's intention remains to keep Ederson and James Trafford as their goalkeepers beyond the deadline."
+    },
+    {
+      "rank": 12,
+      "rerank_score": 0.0017417902126908302,
+      "title": "Premier League 2025/26 fixtures, dates, schedule: Liverpool vs Man Utd live on Sky Sports in October",
+      "url": "https://www.skysports.com/football/news/11095/13415244/premier-league-2025-26-fixtures-dates-schedule-liverpool-vs-man-utd-live-on-sky-sports-in-october",
+      "time": "2025-08-21 02:34:00",
+      "content_preview": "Man City vs Man Utd - live on Sky Sports, kick-off 4.30pm\nSaturday September 20\nMan Utd vs Chelsea - live on Sky Sports , kick-off 5.30pm\nFulham vs Brentford - live on Sky Sports , kick-off 8pm\nSunday"
+    }
+  ]
+}

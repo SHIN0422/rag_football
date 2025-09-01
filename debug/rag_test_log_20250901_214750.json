@@ -1,0 +1,545 @@
+{
+  "query_original": "프리미어리그 이적 시장 내용 알려줘",
+  "query_dictionary_translated": "프리미어리그 이적 시장 내용 알려줘",
+  "query_english_for_bm25": "Please provide information about the Premier League transfer market.",
+  "vector_search_results": [
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "Premier League clubs have set a new record for spending in a single transfer window this summer at o",
+      "score": 0.7726593017578125
+    },
+    {
+      "title": "Mateus Fernandes transfer news: West Ham complete £42m deal to sign midfielder from Southampton",
+      "url": "https://www.skysports.com/football/news/11095/13420384/mateus-fernandes-transfer-news-west-ham-complete-42m-deal-to-sign-midfielder-from-southampton",
+      "content_preview": "\"He gained valuable experience in the Premier League last year with Southampton and is someone we re",
+      "score": 0.7957038879394531
+    },
+    {
+      "title": "Eberechi Eze Q&A: How Arsenal beat Tottenham Hotspur to Crystal Palace winger and what he can bring to Emirates",
+      "url": "https://www.skysports.com/football/news/11706/13415595/eberechi-eze-q-a-how-arsenal-beat-tottenham-hotspur-to-crystal-palace-winger-and-what-he-can-bring-to-emirates",
+      "content_preview": "last season. Only four players completed more take-ons across the Premier League in 2024/25.",
+      "score": 0.7990016341209412
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "The Eze deal also means Premier League clubs have now broken the record for the most spent on transf",
+      "score": 0.8170303702354431
+    },
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "Looking for news about YOUR club? Find dedicated transfer pages for EVERY Premier League team .\nThe ",
+      "score": 0.8179500102996826
+    },
+    {
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "content_preview": "\"They don't want to overspend though. I spoke to him just a couple of days ago in the build-up to th",
+      "score": 0.834952175617218
+    },
+    {
+      "title": "Jorgen Strand Larsen transfer news: Newcastle expected to make improved offer for Wolves striker after £55m bid rejected",
+      "url": "https://www.skysports.com/football/news/11095/13419353/jorgen-strand-larsen-transfer-news-newcastle-expected-to-make-improved-offer-for-wolves-striker-after-55m-bid-rejected",
+      "content_preview": "\"They can't just buy a young player or take a risk on somebody from a European club who doesn't know",
+      "score": 0.8377737402915955
+    },
+    {
+      "title": "Nicolas Jackson transfer news: Aston Villa interested in signing Chelsea striker after exploring conditions of deal",
+      "url": "https://www.skysports.com/football/news/11677/13415336/nicolas-jackson-transfer-news-aston-villa-interested-in-signing-chelsea-striker-after-exploring-conditions-of-deal",
+      "content_preview": "Jackson's value will be determined by the market price paid for strikers by Premier League clubs thi",
+      "score": 0.838614284992218
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "to offset the sale of Jobe Bellingham to Borussia Dortmund.",
+      "score": 0.8424755334854126
+    },
+    {
+      "title": "Celtic transfer news: Adam Idah and Hyun-Jun Yang not allowed to leave until replacements found, says Brendan Rodgers",
+      "url": "https://www.skysports.com/football/news/11787/13420687/celtic-transfer-news-adam-idah-and-hyun-jun-yang-not-allowed-to-leave-until-replacements-found-says-brendan-rodgers",
+      "content_preview": "\"There's interest in Adam but like I've said to the club, we can't let anyone go, especially on the ",
+      "score": 0.8435101509094238
+    },
+    {
+      "title": "Newcastle look blunt without Alexander Isak as West Ham's Graham Potter sinks to a low - Premier League Hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13412642/antoine-semenyo-reveals-liverpools-main-weakness-and-newcastle-look-blunt-without-alexander-isak-premier-league-hits-and-misses",
+      "content_preview": "More signings are needed - with Fulham yet to make an outfield purchase this summer. Rodrigo Muniz i",
+      "score": 0.8472668528556824
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Tune in to The Deadline Day Show at 8am, 11am, 3pm and 6pm.\nLooking for dedicated news about your cl",
+      "score": 0.8485091924667358
+    },
+    {
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "content_preview": "But in contrast, Parish said: \" If Marc wants to sign a contract, then he can stay!\n\"It is a difficu",
+      "score": 0.849626898765564
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "The figures highlight the huge value placed on attacking players, particularly in a summer when many",
+      "score": 0.8508138060569763
+    },
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "The summer transfer window is set to close for Premier League, EFL, LaLiga, Bundesliga, Serie A and ",
+      "score": 0.8528401851654053
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "give youth a chance since replacing the German at Anfield last summer.",
+      "score": 0.8542442321777344
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Club news, transfers and gossip: Arsenal | Aston Villa | Bournemouth | Brentford | Brighton | Burnle",
+      "score": 0.8559160828590393
+    },
+    {
+      "title": "Alejandro Garnacho joins Chelsea: Man Utd winger leaves club in £40m transfer as Blues spending nears £300m",
+      "url": "https://www.skysports.com/football/news/11668/13421128/alejandro-garnacho-joins-chelsea-man-utd-winger-leaves-club-in-40m-transfer-as-blues-spending-nears-300m",
+      "content_preview": "Alejandro Garnacho - Manchester United, £40m\nOut\nKendry Paez - Strasbourg, loan\nDjordje Petrovic - B",
+      "score": 0.8562710285186768
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "However, the £67.5m Eze deal means all 20 Premier League clubs have now spent £2,511,693,000 between",
+      "score": 0.8574647307395935
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "score": 0.8577352597535707
+    }
+  ],
+  "bm25_search_results": [
+    {
+      "title": "Celtic: What next for Brendan Rodgers and the board as fan frustrations increase? | 'We lack ambition'",
+      "url": "https://www.skysports.com/football/news/11787/13415569/celtic-what-next-for-brendan-rodgers-and-the-board-as-fan-frustrations-increase-we-lack-ambition",
+      "content_preview": "\"As fans, I think we're balanced. I think they look at it and say, well, some players will be hedgin"
+    },
+    {
+      "title": "Chelsea transfer news: Enzo Maresca wants new defender after Levi Colwill injury but club unlikely to sign one",
+      "url": "https://www.skysports.com/football/news/11095/13413215/chelsea-transfer-news-enzo-maresca-wants-new-defender-after-levi-colwill-injury-but-club-unlikely-to-sign-one",
+      "content_preview": "Chelsea have arguably one of the deepest squads in the Premier League and there are a lack of option"
+    },
+    {
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "content_preview": "Asked if Wolves could afford to lose a key player between now and the end of the transfer window, Pe"
+    },
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "Looking for news about YOUR club? Find dedicated transfer pages for EVERY Premier League team .\nThe "
+    },
+    {
+      "title": "Liverpool influence at Man City? Jamie Carragher explains how former Jurgen Klopp assistant Pep Lijnders may be impacting Pep Guardiola",
+      "url": "https://www.skysports.com/football/news/11095/13414302/liverpool-influence-at-man-city-jamie-carragher-explains-how-former-jurgen-klopp-assistant-pep-lijnders-may-be-impacting-pep-guardiola",
+      "content_preview": "\"I think he mentioned Brentford, he was talking about Bournemouth, he wasn't just talking about the "
+    },
+    {
+      "title": "Nuno Espirito Santo: Nottingham Forest boss reveals he wants to remain in charge with talks to be held",
+      "url": "https://www.skysports.com/football/news/11727/13417560/nuno-espirito-santo-nottingham-forest-boss-reveals-he-wants-to-remain-in-charge-with-talks-to-be-held",
+      "content_preview": "However, when asked whether he believes he'd be Forest boss come the end of the transfer window, Nun"
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Tune in to The Deadline Day Show at 8am, 11am, 3pm and 6pm.\nLooking for dedicated news about your cl"
+    },
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "The summer transfer window is set to close for Premier League, EFL, LaLiga, Bundesliga, Serie A and "
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Off it, head coach Graham Potter - who has the second-worst record of West Ham managers in the Premi"
+    },
+    {
+      "title": "Morecambe: National League approve club takeover after agreement in principle reached for sale to Panjab Warriors",
+      "url": "https://www.skysports.com/football/news/11095/13413553/morecambe-national-league-approve-club-takeover-after-agreement-in-principle-reached-for-sale-to-panjab-warriors",
+      "content_preview": "Fans' group, the Shrimps Trust, confirmed a \"constructive\" meeting had taken place between Panjab an"
+    },
+    {
+      "title": "Xavi Simons: Tottenham Hotspur register interest in RB Leipzig midfielder and Chelsea target",
+      "url": "https://www.skysports.com/football/news/11095/13419420/xavi-simons-tottenham-hotspur-register-interest-in-rb-leipzig-midfielder-and-chelsea-target",
+      "content_preview": "Eze joining Arsenal at the last-minute was a huge blow for a number of reasons and the information t"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11065/13411447/premier-league-returns-live-all-the-manager-press-conferences-and-build-up-to-the-new-season",
+      "content_preview": "Pereira speaks on Strand Larsen exit talk\nVitor Pereira\nhas made it clear how important\nJorgen Stran"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "So how can their Premier League rivals even start to think about stopping them?"
+    },
+    {
+      "title": "Thomas Frank's Tottenham are flexible, Nottingham Forest change it up and Man Utd's possession in The Debrief",
+      "url": "https://www.skysports.com/football/news/11095/13414076/thomas-franks-tottenham-are-flexible-nottingham-forest-change-it-up-and-man-utds-possession-in-the-debrief",
+      "content_preview": "Both Mbeumo and Cunha had chances to mark their Premier League debuts for the club with a goal. That"
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "Premier League clubs have set a new record for spending in a single transfer window this summer at o"
+    },
+    {
+      "title": "Morecambe: National League approve club takeover after agreement in principle reached for sale to Panjab Warriors",
+      "url": "https://www.skysports.com/football/news/11095/13413553/morecambe-national-league-approve-club-takeover-after-agreement-in-principle-reached-for-sale-to-panjab-warriors",
+      "content_preview": "all parties have verified this information with us, giving us some assurance that a resolution is in"
+    },
+    {
+      "title": "Thomas Frank's Tottenham are flexible, Nottingham Forest change it up and Man Utd's possession in The Debrief",
+      "url": "https://www.skysports.com/football/news/11095/13414076/thomas-franks-tottenham-are-flexible-nottingham-forest-change-it-up-and-man-utds-possession-in-the-debrief",
+      "content_preview": "Forest completed 126 passes in the final third - the most of any Premier League team. After a pre-se"
+    },
+    {
+      "title": "Ben Gannon Doak transfer news: Bournemouth sign winger from Liverpool in a deal worth up to £25m",
+      "url": "https://www.skysports.com/football/news/11669/13414118/ben-gannon-doak-transfer-news-bournemouth-sign-winger-from-liverpool-in-a-deal-worth-up-to-25m",
+      "content_preview": "A host of Premier League clubs, including Nottingham Forest , West Ham , Leeds , Everton and Wolves,"
+    },
+    {
+      "title": "Unai Emery interview: Aston Villa head coach on trying to compete with the richest clubs and why he will do it his way",
+      "url": "https://www.skysports.com/football/news/11677/13415814/unai-emery-interview-aston-villa-manager-on-trying-to-compete-with-the-richest-clubs-and-why-he-will-do-it-his-way",
+      "content_preview": "Asking him about that and the challenges facing Villa, he is happy to explain. Typically, however, h"
+    },
+    {
+      "title": "Bukayo Saka's hamstring injuries a big concern, says Arsenal boss Mikel Arteta",
+      "url": "https://www.skysports.com/football/news/11095/13420655/bukayo-sakas-hamstring-injuries-a-big-concern-says-arsenal-boss-mikel-arteta",
+      "content_preview": "Arsenal will head to Anfield on Sunday aiming for a first Premier League win at the ground since 201"
+    }
+  ],
+  "rrf_fused_candidates": [
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "Looking for news about YOUR club? Find dedicated transfer pages for EVERY Premier League team .\nThe ",
+      "rrf_score": 0.031009615384615385
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "Premier League clubs have set a new record for spending in a single transfer window this summer at o",
+      "rrf_score": 0.029726775956284153
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Tune in to The Deadline Day Show at 8am, 11am, 3pm and 6pm.\nLooking for dedicated news about your cl",
+      "rrf_score": 0.028814262023217248
+    },
+    {
+      "title": "Summer transfer window 2025 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13336561/summer-transfer-window-2025-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players",
+      "content_preview": "The summer transfer window is set to close for Premier League, EFL, LaLiga, Bundesliga, Serie A and ",
+      "rrf_score": 0.02803921568627451
+    },
+    {
+      "title": "Celtic: What next for Brendan Rodgers and the board as fan frustrations increase? | 'We lack ambition'",
+      "url": "https://www.skysports.com/football/news/11787/13415569/celtic-what-next-for-brendan-rodgers-and-the-board-as-fan-frustrations-increase-we-lack-ambition",
+      "content_preview": "\"As fans, I think we're balanced. I think they look at it and say, well, some players will be hedgin",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "Mateus Fernandes transfer news: West Ham complete £42m deal to sign midfielder from Southampton",
+      "url": "https://www.skysports.com/football/news/11095/13420384/mateus-fernandes-transfer-news-west-ham-complete-42m-deal-to-sign-midfielder-from-southampton",
+      "content_preview": "\"He gained valuable experience in the Premier League last year with Southampton and is someone we re",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Chelsea transfer news: Enzo Maresca wants new defender after Levi Colwill injury but club unlikely to sign one",
+      "url": "https://www.skysports.com/football/news/11095/13413215/chelsea-transfer-news-enzo-maresca-wants-new-defender-after-levi-colwill-injury-but-club-unlikely-to-sign-one",
+      "content_preview": "Chelsea have arguably one of the deepest squads in the Premier League and there are a lack of option",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Eberechi Eze Q&A: How Arsenal beat Tottenham Hotspur to Crystal Palace winger and what he can bring to Emirates",
+      "url": "https://www.skysports.com/football/news/11706/13415595/eberechi-eze-q-a-how-arsenal-beat-tottenham-hotspur-to-crystal-palace-winger-and-what-he-can-bring-to-emirates",
+      "content_preview": "last season. Only four players completed more take-ons across the Premier League in 2024/25.",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "content_preview": "Asked if Wolves could afford to lose a key player between now and the end of the transfer window, Pe",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "The Eze deal also means Premier League clubs have now broken the record for the most spent on transf",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "Liverpool influence at Man City? Jamie Carragher explains how former Jurgen Klopp assistant Pep Lijnders may be impacting Pep Guardiola",
+      "url": "https://www.skysports.com/football/news/11095/13414302/liverpool-influence-at-man-city-jamie-carragher-explains-how-former-jurgen-klopp-assistant-pep-lijnders-may-be-impacting-pep-guardiola",
+      "content_preview": "\"I think he mentioned Brentford, he was talking about Bournemouth, he wasn't just talking about the ",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "content_preview": "\"They don't want to overspend though. I spoke to him just a couple of days ago in the build-up to th",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Nuno Espirito Santo: Nottingham Forest boss reveals he wants to remain in charge with talks to be held",
+      "url": "https://www.skysports.com/football/news/11727/13417560/nuno-espirito-santo-nottingham-forest-boss-reveals-he-wants-to-remain-in-charge-with-talks-to-be-held",
+      "content_preview": "However, when asked whether he believes he'd be Forest boss come the end of the transfer window, Nun",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Jorgen Strand Larsen transfer news: Newcastle expected to make improved offer for Wolves striker after £55m bid rejected",
+      "url": "https://www.skysports.com/football/news/11095/13419353/jorgen-strand-larsen-transfer-news-newcastle-expected-to-make-improved-offer-for-wolves-striker-after-55m-bid-rejected",
+      "content_preview": "\"They can't just buy a young player or take a risk on somebody from a European club who doesn't know",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "Nicolas Jackson transfer news: Aston Villa interested in signing Chelsea striker after exploring conditions of deal",
+      "url": "https://www.skysports.com/football/news/11677/13415336/nicolas-jackson-transfer-news-aston-villa-interested-in-signing-chelsea-striker-after-exploring-conditions-of-deal",
+      "content_preview": "Jackson's value will be determined by the market price paid for strikers by Premier League clubs thi",
+      "rrf_score": 0.014705882352941176
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "to offset the sale of Jobe Bellingham to Borussia Dortmund.",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Off it, head coach Graham Potter - who has the second-worst record of West Ham managers in the Premi",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "Celtic transfer news: Adam Idah and Hyun-Jun Yang not allowed to leave until replacements found, says Brendan Rodgers",
+      "url": "https://www.skysports.com/football/news/11787/13420687/celtic-transfer-news-adam-idah-and-hyun-jun-yang-not-allowed-to-leave-until-replacements-found-says-brendan-rodgers",
+      "content_preview": "\"There's interest in Adam but like I've said to the club, we can't let anyone go, especially on the ",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Morecambe: National League approve club takeover after agreement in principle reached for sale to Panjab Warriors",
+      "url": "https://www.skysports.com/football/news/11095/13413553/morecambe-national-league-approve-club-takeover-after-agreement-in-principle-reached-for-sale-to-panjab-warriors",
+      "content_preview": "Fans' group, the Shrimps Trust, confirmed a \"constructive\" meeting had taken place between Panjab an",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Newcastle look blunt without Alexander Isak as West Ham's Graham Potter sinks to a low - Premier League Hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13412642/antoine-semenyo-reveals-liverpools-main-weakness-and-newcastle-look-blunt-without-alexander-isak-premier-league-hits-and-misses",
+      "content_preview": "More signings are needed - with Fulham yet to make an outfield purchase this summer. Rodrigo Muniz i",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "Xavi Simons: Tottenham Hotspur register interest in RB Leipzig midfielder and Chelsea target",
+      "url": "https://www.skysports.com/football/news/11095/13419420/xavi-simons-tottenham-hotspur-register-interest-in-rb-leipzig-midfielder-and-chelsea-target",
+      "content_preview": "Eze joining Arsenal at the last-minute was a huge blow for a number of reasons and the information t",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11065/13411447/premier-league-returns-live-all-the-manager-press-conferences-and-build-up-to-the-new-season",
+      "content_preview": "Pereira speaks on Strand Larsen exit talk\nVitor Pereira\nhas made it clear how important\nJorgen Stran",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "content_preview": "But in contrast, Parish said: \" If Marc wants to sign a contract, then he can stay!\n\"It is a difficu",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "So how can their Premier League rivals even start to think about stopping them?",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "content_preview": "The figures highlight the huge value placed on attacking players, particularly in a summer when many",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Thomas Frank's Tottenham are flexible, Nottingham Forest change it up and Man Utd's possession in The Debrief",
+      "url": "https://www.skysports.com/football/news/11095/13414076/thomas-franks-tottenham-are-flexible-nottingham-forest-change-it-up-and-man-utds-possession-in-the-debrief",
+      "content_preview": "Both Mbeumo and Cunha had chances to mark their Premier League debuts for the club with a goal. That",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "give youth a chance since replacing the German at Anfield last summer.",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "Morecambe: National League approve club takeover after agreement in principle reached for sale to Panjab Warriors",
+      "url": "https://www.skysports.com/football/news/11095/13413553/morecambe-national-league-approve-club-takeover-after-agreement-in-principle-reached-for-sale-to-panjab-warriors",
+      "content_preview": "all parties have verified this information with us, giving us some assurance that a resolution is in",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Club news, transfers and gossip: Arsenal | Aston Villa | Bournemouth | Brentford | Brighton | Burnle",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "Thomas Frank's Tottenham are flexible, Nottingham Forest change it up and Man Utd's possession in The Debrief",
+      "url": "https://www.skysports.com/football/news/11095/13414076/thomas-franks-tottenham-are-flexible-nottingham-forest-change-it-up-and-man-utds-possession-in-the-debrief",
+      "content_preview": "Forest completed 126 passes in the final third - the most of any Premier League team. After a pre-se",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "Alejandro Garnacho joins Chelsea: Man Utd winger leaves club in £40m transfer as Blues spending nears £300m",
+      "url": "https://www.skysports.com/football/news/11668/13421128/alejandro-garnacho-joins-chelsea-man-utd-winger-leaves-club-in-40m-transfer-as-blues-spending-nears-300m",
+      "content_preview": "Alejandro Garnacho - Manchester United, £40m\nOut\nKendry Paez - Strasbourg, loan\nDjordje Petrovic - B",
+      "rrf_score": 0.01282051282051282
+    },
+    {
+      "title": "Ben Gannon Doak transfer news: Bournemouth sign winger from Liverpool in a deal worth up to £25m",
+      "url": "https://www.skysports.com/football/news/11669/13414118/ben-gannon-doak-transfer-news-bournemouth-sign-winger-from-liverpool-in-a-deal-worth-up-to-25m",
+      "content_preview": "A host of Premier League clubs, including Nottingham Forest , West Ham , Leeds , Everton and Wolves,",
+      "rrf_score": 0.01282051282051282
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "However, the £67.5m Eze deal means all 20 Premier League clubs have now spent £2,511,693,000 between",
+      "rrf_score": 0.012658227848101266
+    },
+    {
+      "title": "Unai Emery interview: Aston Villa head coach on trying to compete with the richest clubs and why he will do it his way",
+      "url": "https://www.skysports.com/football/news/11677/13415814/unai-emery-interview-aston-villa-manager-on-trying-to-compete-with-the-richest-clubs-and-why-he-will-do-it-his-way",
+      "content_preview": "Asking him about that and the challenges facing Villa, he is happy to explain. Typically, however, h",
+      "rrf_score": 0.012658227848101266
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "rrf_score": 0.0125
+    },
+    {
+      "title": "Bukayo Saka's hamstring injuries a big concern, says Arsenal boss Mikel Arteta",
+      "url": "https://www.skysports.com/football/news/11095/13420655/bukayo-sakas-hamstring-injuries-a-big-concern-says-arsenal-boss-mikel-arteta",
+      "content_preview": "Arsenal will head to Anfield on Sunday aiming for a first Premier League win at the ground since 201",
+      "rrf_score": 0.0125
+    }
+  ],
+  "final_ranked_documents": [
+    {
+      "rank": 1,
+      "rerank_score": 0.01893567480146885,
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "time": "2025-08-24 07:02:00",
+      "content_preview": "The Eze deal also means Premier League clubs have now broken the record for the most spent on transfers in a single window.\nThe previous record was the summer of 2023 with the record at £2.4634bn."
+    },
+    {
+      "rank": 2,
+      "rerank_score": 0.011691984720528126,
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "time": "2025-08-24 07:02:00",
+      "content_preview": "However, the £67.5m Eze deal means all 20 Premier League clubs have now spent £2,511,693,000 between them in this window.\nSky Sports' Peter Smith:"
+    },
+    {
+      "rank": 3,
+      "rerank_score": 0.009242037311196327,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11065/13411447/premier-league-returns-live-all-the-manager-press-conferences-and-build-up-to-the-new-season",
+      "time": "2025-08-22 22:43:11",
+      "content_preview": "Pereira speaks on Strand Larsen exit talk\nVitor Pereira\nhas made it clear how important\nJorgen Strand Larsen\nis to\nWolves\nbut stopped short of guaranteeing that the Norwegian striker would remain at t"
+    },
+    {
+      "rank": 4,
+      "rerank_score": 0.008315231651067734,
+      "title": "Premier League sides smash transfer record as spending passes £2.6bn but where is your club stronger or weaker?",
+      "url": "https://www.skysports.com/football/news/11661/13418177/premier-league-sides-smash-transfer-record-as-spending-passes-2-6bn-but-where-is-your-club-stronger-or-weaker",
+      "time": "2025-08-28 00:30:00",
+      "content_preview": "The figures highlight the huge value placed on attacking players, particularly in a summer when many of the Premier League's top clubs have been looking to add more firepower."
+    },
+    {
+      "rank": 5,
+      "rerank_score": 0.005960526410490274,
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "time": "2025-08-26 05:15:00",
+      "content_preview": "Asked if Wolves could afford to lose a key player between now and the end of the transfer window, Pereira added: \"I don't know. The market is the market. If the window is open, the players can come an"
+    },
+    {
+      "rank": 6,
+      "rerank_score": 0.005366257391870022,
+      "title": "Chelsea transfer news: Enzo Maresca wants new defender after Levi Colwill injury but club unlikely to sign one",
+      "url": "https://www.skysports.com/football/news/11095/13413215/chelsea-transfer-news-enzo-maresca-wants-new-defender-after-levi-colwill-injury-but-club-unlikely-to-sign-one",
+      "time": "2025-08-17 04:46:00",
+      "content_preview": "Chelsea have arguably one of the deepest squads in the Premier League and there are a lack of options of the required standard available in the current market. Another reason why they will not panic b"
+    },
+    {
+      "rank": 7,
+      "rerank_score": 0.004610361997038126,
+      "title": "Jorgen Strand Larsen transfer news: Newcastle expected to make improved offer for Wolves striker after £55m bid rejected",
+      "url": "https://www.skysports.com/football/news/11095/13419353/jorgen-strand-larsen-transfer-news-newcastle-expected-to-make-improved-offer-for-wolves-striker-after-55m-bid-rejected",
+      "time": "2025-08-28 16:48:00",
+      "content_preview": "\"They can't just buy a young player or take a risk on somebody from a European club who doesn't know the Premier League, and just throw him in there and expect him to do a job. It would leave a big ho"
+    },
+    {
+      "rank": 8,
+      "rerank_score": 0.003260477678850293,
+      "title": "Newcastle transfer news: Wolves reject Jorgen Strand Larsen bid",
+      "url": "https://www.skysports.com/football/news/11661/13418249/newcastle-transfer-news-wolves-reject-jorgen-strand-larsen-bid",
+      "time": "2025-08-26 05:15:00",
+      "content_preview": "\"They don't want to overspend though. I spoke to him just a couple of days ago in the build-up to this game. He said they don't want to overspend but they know they need strikers in because they're pl"
+    },
+    {
+      "rank": 9,
+      "rerank_score": 0.001245444524101913,
+      "title": "Bukayo Saka's hamstring injuries a big concern, says Arsenal boss Mikel Arteta",
+      "url": "https://www.skysports.com/football/news/11095/13420655/bukayo-sakas-hamstring-injuries-a-big-concern-says-arsenal-boss-mikel-arteta",
+      "time": "2025-08-30 01:16:00",
+      "content_preview": "Arsenal will head to Anfield on Sunday aiming for a first Premier League win at the ground since 2012 and Arteta has challenged his players to seize their chance to make a statement about their title "
+    },
+    {
+      "rank": 10,
+      "rerank_score": 0.0010393070988357067,
+      "title": "Unai Emery interview: Aston Villa head coach on trying to compete with the richest clubs and why he will do it his way",
+      "url": "https://www.skysports.com/football/news/11677/13415814/unai-emery-interview-aston-villa-manager-on-trying-to-compete-with-the-richest-clubs-and-why-he-will-do-it-his-way",
+      "time": "2025-08-31 15:39:00",
+      "content_preview": "Asking him about that and the challenges facing Villa, he is happy to explain. Typically, however, his first thoughts are tactical rather than financial. It is not just that his team needs strengtheni"
+    },
+    {
+      "rank": 11,
+      "rerank_score": 0.0009302721591666341,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "time": "2025-09-01 20:00:25",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\nhave agreed a British-record deal to sign\nNewcastle\nstriker\nAlexander Isak\n.\nNewcastle\nagree deal wo"
+    },
+    {
+      "rank": 12,
+      "rerank_score": 0.0008199012372642756,
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "time": "2025-08-22 15:55:00",
+      "content_preview": "But in contrast, Parish said: \" If Marc wants to sign a contract, then he can stay!\n\"It is a difficult situation. If you are in Europe, the financial rules are a lot tighter than in the Premier League"
+    }
+  ]
+}

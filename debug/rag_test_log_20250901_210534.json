@@ -1,0 +1,515 @@
+{
+  "query_original": "리버풀 이적 소식 알려줘",
+  "query_dictionary_translated": "liverpool 이적 소식 알려줘",
+  "query_english_for_bm25": "Please provide updates on Liverpool transfer news.",
+  "vector_search_results": [
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Villa hold informal talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jones and Vinny ",
+      "score": 0.7204453945159912
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Villa hold informal talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jones and Vinny ",
+      "score": 0.7204453945159912
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Villa exploring deal for Elliot\nLatest from Sky Sports News' Vinny O'Connor and Rob Jones:\nAston Vil",
+      "score": 0.727172315120697
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Villa exploring deal for Elliot\nLatest from Sky Sports News' Vinny O'Connor and Rob Jones:\nAston Vil",
+      "score": 0.727172315120697
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Aston Villa hold talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jonse and Vinny O'C",
+      "score": 0.734464168548584
+    },
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "Sky Sports' Adam Bate:\nLiverpool have already been busy in the transfer market this summer, making s",
+      "score": 0.7480193376541138
+    },
+    {
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "content_preview": "Liverpool are interested in signing Guehi, who has entered the final year of his contract, while Eze",
+      "score": 0.7485116720199585
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/30778/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "score": 0.7744266986846924
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11670/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "score": 0.7744266986846924
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "score": 0.7793756723403931
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "score": 0.7793756723403931
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "give youth a chance since replacing the German at Anfield last summer.",
+      "score": 0.7861818671226501
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Lindelof would add experience, says Emery\nAston Villa\nboss\nUnai Emery\nhas commented on the potential",
+      "score": 0.7869217991828918
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "score": 0.7922992706298828
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "score": 0.7922992706298828
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "score": 0.7946819067001343
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "score": 0.7946819067001343
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "score": 0.797370362997348
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "score": 0.797370362997348
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "score": 0.8019258597079325
+    }
+  ],
+  "bm25_search_results": [
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Tune in to The Deadline Day Show at 8am, 11am, 3pm and 6pm.\nLooking for dedicated news about your cl"
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "Q: I want to receive the latest football, tennis, rugby league, darts, golf and boxing news. Can I s"
+    },
+    {
+      "title": "Nuno Espirito Santo: Nottingham Forest boss reveals he wants to remain in charge with talks to be held",
+      "url": "https://www.skysports.com/football/news/11727/13417560/nuno-espirito-santo-nottingham-forest-boss-reveals-he-wants-to-remain-in-charge-with-talks-to-be-held",
+      "content_preview": "However, when asked whether he believes he'd be Forest boss come the end of the transfer window, Nun"
+    },
+    {
+      "title": "Marcelo Saracchi transfer news: Celtic sign Boca Juniors left-back on season-long loan deal",
+      "url": "https://www.skysports.com/football/news/11787/13418703/marcelo-saracchi-transfer-news-celtic-sign-boca-juniors-left-back-on-season-long-loan-deal",
+      "content_preview": "Saracchi, who has nine caps for Uruguay, will provide back-up for Kieran Tierney, which could allow "
+    },
+    {
+      "title": "Alexander Isak transfer news: Liverpool set to sign striker from Newcastle in British-record deal on Deadline Day",
+      "url": "https://www.skysports.com/football/news/11095/13422802/alexander-isak-transfer-news-liverpool-set-to-sign-striker-from-newcastle-in-british-record-deal-on-deadline-day",
+      "content_preview": "Liverpool and Newcastle have agreed a British-record transfer for Alexander Isak.\nSky Sports News un"
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "Despite spending just shy of £300m in this transfer window on new signings, it was Rio Ngumoha who s"
+    },
+    {
+      "title": "Ruben Amorim: Man Utd head coach says he loves his players 'when they put effort in' after dramatic win over Burnley",
+      "url": "https://www.skysports.com/football/news/30778/13421776/ruben-amorim-man-utd-head-coach-says-he-loves-his-players-when-they-put-effort-in-after-dramatic-win-over-burnley",
+      "content_preview": "\"They are humans. At Manchester United everything is the news. Everybody talks about the goalkeeper "
+    },
+    {
+      "title": "Nick Woltemade joins Newcastle: Stuttgart striker signs in club-record £69m deal to increase chances of Alexander Isak exit",
+      "url": "https://www.skysports.com/football/news/11095/13421141/nick-woltemade-joins-newcastle-stuttgart-striker-signs-in-club-record-69m-deal-to-increase-chances-of-alexander-isak-exit",
+      "content_preview": "Woltemade's arrival increases the likelihood of Isak leaving for Liverpool with less than three days"
+    },
+    {
+      "title": "Brendan Rodgers: Celtic manager insists he won't walk away from club | 'Tried that before, didn't go down well!'",
+      "url": "https://www.skysports.com/football/news/11095/13416172/brendan-rodgers-celtic-manager-insists-he-wont-walk-away-from-club-tried-that-before-didnt-go-down-well",
+      "content_preview": "\"When you lose any player, especially of that calibre, then of course it is a disappointment, but it"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Konate off injured as Guehi starts for Palace\nIbrahima Konate\nlimped off injured against Arsenal on "
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Isak set for medical after British-record deal agreed\nLatest from Sky Sports News' Mark McAdam:\nLive"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Isak set for medical after British-record deal agreed\nLatest from Sky Sports News' Mark McAdam:\nLive"
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "url": "https://www.skysports.com/football/news/11095/13420137/kai-havertz-injury-arsenal-forward-undergoes-knee-surgery-but-gunners-hopeful-on-german-forwards-recovery-time",
+      "content_preview": "Arteta is also expected to give injury updates on Ben White and Christian Norgaard - who missed the "
+    },
+    {
+      "title": "Liverpool a test of depth for Arsenal but Eberechi Eze and Noni Madueke ease Bukayo Saka and Martin Odegaard worry",
+      "url": "https://www.skysports.com/football/news/11670/13419258/liverpool-a-test-of-depth-for-arsenal-but-eberechi-eze-and-noni-madueke-ease-bukayo-saka-and-martin-odegaard-worry",
+      "content_preview": "It could be argued that, in Gyokeres and Eze, only two of Arsenal's seven signings provide obvious u"
+    },
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "Liverpool would have hoped to have Alexander Isak lining up for them against Newcastle on Monday Nig"
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"After discussing closely with Michelle and her family, we have all agreed that this move will provi"
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Kai Havertz's injury has added to the onus on Gyokeres' shoulders but this was exactly the response "
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Martinez left out of Villa squad amid transfer speculation\nGoalkeeper\nEmi Martínez\nhas been left out"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Martinez left out of Villa squad amid Man Utd transfer links\nGoalkeeper\nEmi Martínez\nhas been left o"
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Martinez left out of Villa squad amid Man Utd transfer links\nGoalkeeper\nEmi Martínez\nhas been left o"
+    }
+  ],
+  "rrf_fused_candidates": [
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Villa hold informal talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jones and Vinny ",
+      "rrf_score": 0.03252247488101534
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Villa exploring deal for Elliot\nLatest from Sky Sports News' Vinny O'Connor and Rob Jones:\nAston Vil",
+      "rrf_score": 0.03149801587301587
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/30778/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "rrf_score": 0.02919863597612958
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Vieira and Lokonga likely to join Hamburg\nLatest from Sky Sports News' James Green:\nArsenal\nmidfield",
+      "rrf_score": 0.028370221327967807
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Isak set for medical after British-record deal agreed\nLatest from Sky Sports News' Mark McAdam:\nLive",
+      "rrf_score": 0.02797339593114241
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "rrf_score": 0.02684684684684685
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Ro",
+      "rrf_score": 0.026144907723855092
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "rrf_score": 0.025478740668614087
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Martinez left out of Villa squad amid Man Utd transfer links\nGoalkeeper\nEmi Martínez\nhas been left o",
+      "rrf_score": 0.025158227848101268
+    },
+    {
+      "title": "FREE STREAM: The Deadline Day Show LIVE! Latest football transfer news, updates and rumours",
+      "url": "https://www.skysports.com/football/news/12040/13376037/free-stream-the-transfer-show-live-latest-football-transfer-news-updates-and-rumours",
+      "content_preview": "Tune in to The Deadline Day Show at 8am, 11am, 3pm and 6pm.\nLooking for dedicated news about your cl",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "Sky Sports push notifications FAQ: How to receive the news alerts you want",
+      "url": "https://www.skysports.com/football/news/11095/10952996/sky-sports-push-notifications-faq-how-to-receive-the-alerts-you-want",
+      "content_preview": "Q: I want to receive the latest football, tennis, rugby league, darts, golf and boxing news. Can I s",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Nuno Espirito Santo: Nottingham Forest boss reveals he wants to remain in charge with talks to be held",
+      "url": "https://www.skysports.com/football/news/11727/13417560/nuno-espirito-santo-nottingham-forest-boss-reveals-he-wants-to-remain-in-charge-with-talks-to-be-held",
+      "content_preview": "However, when asked whether he believes he'd be Forest boss come the end of the transfer window, Nun",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Marcelo Saracchi transfer news: Celtic sign Boca Juniors left-back on season-long loan deal",
+      "url": "https://www.skysports.com/football/news/11787/13418703/marcelo-saracchi-transfer-news-celtic-sign-boca-juniors-left-back-on-season-long-loan-deal",
+      "content_preview": "Saracchi, who has nine caps for Uruguay, will provide back-up for Kieran Tierney, which could allow ",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Aston Villa hold talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jonse and Vinny O'C",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Alexander Isak transfer news: Liverpool set to sign striker from Newcastle in British-record deal on Deadline Day",
+      "url": "https://www.skysports.com/football/news/11095/13422802/alexander-isak-transfer-news-liverpool-set-to-sign-striker-from-newcastle-in-british-record-deal-on-deadline-day",
+      "content_preview": "Liverpool and Newcastle have agreed a British-record transfer for Alexander Isak.\nSky Sports News un",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "Sky Sports' Adam Bate:\nLiverpool have already been busy in the transfer market this summer, making s",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "Despite spending just shy of £300m in this transfer window on new signings, it was Rio Ngumoha who s",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "content_preview": "Liverpool are interested in signing Guehi, who has entered the final year of his contract, while Eze",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "Ruben Amorim: Man Utd head coach says he loves his players 'when they put effort in' after dramatic win over Burnley",
+      "url": "https://www.skysports.com/football/news/30778/13421776/ruben-amorim-man-utd-head-coach-says-he-loves-his-players-when-they-put-effort-in-after-dramatic-win-over-burnley",
+      "content_preview": "\"They are humans. At Manchester United everything is the news. Everybody talks about the goalkeeper ",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "Nick Woltemade joins Newcastle: Stuttgart striker signs in club-record £69m deal to increase chances of Alexander Isak exit",
+      "url": "https://www.skysports.com/football/news/11095/13421141/nick-woltemade-joins-newcastle-stuttgart-striker-signs-in-club-record-69m-deal-to-increase-chances-of-alexander-isak-exit",
+      "content_preview": "Woltemade's arrival increases the likelihood of Isak leaving for Liverpool with less than three days",
+      "rrf_score": 0.014705882352941176
+    },
+    {
+      "title": "Brendan Rodgers: Celtic manager insists he won't walk away from club | 'Tried that before, didn't go down well!'",
+      "url": "https://www.skysports.com/football/news/11095/13416172/brendan-rodgers-celtic-manager-insists-he-wont-walk-away-from-club-tried-that-before-didnt-go-down-well",
+      "content_preview": "\"When you lose any player, especially of that calibre, then of course it is a disappointment, but it",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Konate off injured as Guehi starts for Palace\nIbrahima Konate\nlimped off injured against Arsenal on ",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Rio Ngumoha: Who is 16-year-old Liverpool winger and how did he break into Arne Slot's first-team squad?",
+      "url": "https://www.skysports.com/football/news/11669/13407507/rio-ngumoha-who-is-16-year-old-liverpool-winger-and-how-did-he-break-into-arne-slots-first-team-squad",
+      "content_preview": "give youth a chance since replacing the German at Anfield last summer.",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Lindelof would add experience, says Emery\nAston Villa\nboss\nUnai Emery\nhas commented on the potential",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "url": "https://www.skysports.com/football/news/11095/13420137/kai-havertz-injury-arsenal-forward-undergoes-knee-surgery-but-gunners-hopeful-on-german-forwards-recovery-time",
+      "content_preview": "Arteta is also expected to give injury updates on Ben White and Christian Norgaard - who missed the ",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Liverpool a test of depth for Arsenal but Eberechi Eze and Noni Madueke ease Bukayo Saka and Martin Odegaard worry",
+      "url": "https://www.skysports.com/football/news/11670/13419258/liverpool-a-test-of-depth-for-arsenal-but-eberechi-eze-and-noni-madueke-ease-bukayo-saka-and-martin-odegaard-worry",
+      "content_preview": "It could be argued that, in Gyokeres and Eze, only two of Arsenal's seven signings provide obvious u",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "content_preview": "Liverpool would have hoped to have Alexander Isak lining up for them against Newcastle on Monday Nig",
+      "rrf_score": 0.013333333333333334
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"After discussing closely with Michelle and her family, we have all agreed that this move will provi",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "Viktor Gyokeres off the mark for Arsenal as Man City produce worrying display against Spurs - Premier League hits and misses",
+      "url": "https://www.skysports.com/football/news/11095/13416627/man-city-produce-a-worrying-display-in-defeat-to-tottenham-hotspur-premier-league-hits-and-misses",
+      "content_preview": "Kai Havertz's injury has added to the onus on Gyokeres' shoulders but this was exactly the response ",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "content_preview": "Martinez left out of Villa squad amid transfer speculation\nGoalkeeper\nEmi Martínez\nhas been left out",
+      "rrf_score": 0.01282051282051282
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\n",
+      "rrf_score": 0.0125
+    }
+  ],
+  "final_ranked_documents": [
+    {
+      "rank": 1,
+      "rerank_score": 0.011598700657486916,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "time": "2025-09-01 19:55:28",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\nhave agreed a British-record deal to sign\nNewcastle\nstriker\nAlexander Isak\n.\nNewcastle\nagree deal wo"
+    },
+    {
+      "rank": 2,
+      "rerank_score": 0.006733553018420935,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "time": "2025-09-01 20:00:25",
+      "content_preview": "Deadline Day latest!\nIt's been a very busy day so far and here are your main headlines...\nLiverpool\nhave agreed a British-record deal to sign\nNewcastle\nstriker\nAlexander Isak\n.\nNewcastle\nagree deal wo"
+    },
+    {
+      "rank": 3,
+      "rerank_score": 0.0014984880108386278,
+      "title": "Marc Guehi transfer news: Liverpool target must stay at Crystal Palace for Conference League tie, says Oliver Glasner",
+      "url": "https://www.skysports.com/football/news/11706/13415735/marc-guehi-transfer-news-liverpool-target-must-stay-at-crystal-palace-for-conference-league-tie-says-oliver-glasner",
+      "time": "2025-08-22 15:55:00",
+      "content_preview": "Liverpool are interested in signing Guehi, who has entered the final year of his contract, while Eze is set to move to Arsenal after the clubs agreed a £67.5m deal on Wednesday."
+    },
+    {
+      "rank": 4,
+      "rerank_score": 0.0010688651818782091,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11677/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "time": "2025-09-01 19:06:51",
+      "content_preview": "Aston Villa hold talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jonse and Vinny O'Connor:\nAston Villa\nhave had informal conversations with\nLiverpool\nover attacker\nHarvey Elliott.\nEver"
+    },
+    {
+      "rank": 5,
+      "rerank_score": 0.0006442738231271505,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "time": "2025-09-01 19:07:22",
+      "content_preview": "Villa exploring deal for Elliot\nLatest from Sky Sports News' Vinny O'Connor and Rob Jones:\nAston Villa\nhave had informal conversations with\nLiverpool\nover attacker\nHarvey Elliott\n.\nEverything is on th"
+    },
+    {
+      "rank": 6,
+      "rerank_score": 0.0005905651487410069,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/41914/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "time": "2025-09-01 19:09:18",
+      "content_preview": "Villa hold informal talks over Liverpool's Elliott\nLatest from Sky Sports News' Rob Jones and Vinny O'Connor:\nAston Villa\nhave had informal conversations with\nLiverpool\nover attacker\nHarvey Elliott.\nE"
+    },
+    {
+      "rank": 7,
+      "rerank_score": 0.0003988487005699426,
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "time": "2025-08-26 02:35:00",
+      "content_preview": "Sky Sports' Adam Bate:\nLiverpool have already been busy in the transfer market this summer, making significant changes in the forward positions. The acquisitions of Hugo Ekitike and Florian Wirtz have"
+    },
+    {
+      "rank": 8,
+      "rerank_score": 0.00031052346457727253,
+      "title": "Nick Woltemade joins Newcastle: Stuttgart striker signs in club-record £69m deal to increase chances of Alexander Isak exit",
+      "url": "https://www.skysports.com/football/news/11095/13421141/nick-woltemade-joins-newcastle-stuttgart-striker-signs-in-club-record-69m-deal-to-increase-chances-of-alexander-isak-exit",
+      "time": "2025-08-30 21:35:00",
+      "content_preview": "Woltemade's arrival increases the likelihood of Isak leaving for Liverpool with less than three days left of the transfer window."
+    },
+    {
+      "rank": 9,
+      "rerank_score": 0.0003046969650313258,
+      "title": "Alexander Isak transfer news: Liverpool set to sign striker from Newcastle in British-record deal on Deadline Day",
+      "url": "https://www.skysports.com/football/news/11095/13422802/alexander-isak-transfer-news-liverpool-set-to-sign-striker-from-newcastle-in-british-record-deal-on-deadline-day",
+      "time": "2025-09-01 15:58:00",
+      "content_preview": "Liverpool and Newcastle have agreed a British-record transfer for Alexander Isak.\nSky Sports News understands Liverpool will pay a fixed fee of £125m for the striker, who is now expected to complete h"
+    },
+    {
+      "rank": 10,
+      "rerank_score": 0.00028638544608838856,
+      "title": "Alexander Isak: Newcastle striker wants to leave amid Liverpool interest - but what happens now?",
+      "url": "https://www.skysports.com/football/news/11095/13415029/alexander-isak-newcastle-striker-wants-to-leave-amid-liverpool-interest-but-what-happens-now",
+      "time": "2025-08-26 02:35:00",
+      "content_preview": "Liverpool would have hoped to have Alexander Isak lining up for them against Newcastle on Monday Night Football this evening - but the Swedish forward remains in a transfer stand-off with the Magpies "
+    },
+    {
+      "rank": 11,
+      "rerank_score": 0.00024116106214933097,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "time": "2025-09-01 19:48:51",
+      "content_preview": "EXCLUSIVE: Liverpool receive Milan offer for Gomez but deal unlikely\nLatest from Sky Sports News' Rob Dorsett and Vinny O'Connor:\nLiverpool\nhave received an offer from\nAC Milan\nfor\nJoe Gomez,\nbut it l"
+    },
+    {
+      "rank": 12,
+      "rerank_score": 0.0002134051756002009,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11669/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "time": "2025-09-01 18:21:23",
+      "content_preview": "Isak set for medical after British-record deal agreed\nLatest from Sky Sports News' Mark McAdam:\nLiverpool\nand\nNewcastle\nhave agreed a British-record transfer for Alexander Isak.\nSky Sports News\nunders"
+    }
+  ]
+}

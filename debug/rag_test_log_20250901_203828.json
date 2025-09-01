@@ -1,0 +1,545 @@
+{
+  "query_original": "아스날 관련 소식 알려줘",
+  "query_dictionary_translated": "arsenal 관련 소식 알려줘",
+  "query_english_for_bm25": "arsenal 관련 소식 알려줘",
+  "vector_search_results": [
+    {
+      "title": "Liverpool growing in confidence on Crystal Palace's Marc Guehi deal while Bruno Fernandes is open to Man Utd exit next year - Paper Talk",
+      "url": "https://www.skysports.com/football/news/11095/13419694/liverpool-growing-in-confidence-on-crystal-palaces-marc-guehi-deal-while-bruno-fernandes-is-open-to-man-utd-exit-next-year-paper-talk",
+      "content_preview": "Arsenal have four more players - Piero Hincapie, Jon Martin, Arnau Martinez and Oscar Gloukh - on th",
+      "score": 0.8010252118110657
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Arsenal have won five corners this season, they have scored from three of them.",
+      "score": 0.8245208263397217
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward being assessed over knee problem",
+      "url": "https://www.skysports.com/football/news/11095/13415182/kai-havertz-injury-arsenal-forward-being-assessed-over-knee-problem",
+      "content_preview": "What this situation does tell us, though, is that Arsenal will have to get Gyokeres on song soon, af",
+      "score": 0.8373168706893921
+    },
+    {
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "content_preview": "\"This is a tough start. Arsenal are a tough team to break down. I'm not too downhearted. I thought t",
+      "score": 0.8417530059814453
+    },
+    {
+      "title": "Eberechi Eze Q&A: How Arsenal beat Tottenham Hotspur to Crystal Palace winger and what he can bring to Emirates",
+      "url": "https://www.skysports.com/football/news/11706/13415595/eberechi-eze-q-a-how-arsenal-beat-tottenham-hotspur-to-crystal-palace-winger-and-what-he-can-bring-to-emirates",
+      "content_preview": "Sky Sports' Ron Walker:\nLast season, Arsenal's biggest difficulty was breaking down teams with a low",
+      "score": 0.8449609279632568
+    },
+    {
+      "title": "Eberechi Eze can take Arsenal to the Premier League title, says Paul Merson",
+      "url": "https://www.skysports.com/football/news/15205/13415592/eberechi-eze-can-take-arsenal-to-the-premier-league-title-says-paul-merson",
+      "content_preview": "It is that livewire maverick Arsenal will hope can unlock deep defences and bring a spark to their p",
+      "score": 0.8511741757392883
+    },
+    {
+      "title": "Eberechi Eze transfer news: Arsenal agree £67.5m deal to sign Crystal Palace forward after hijacking Tottenham move",
+      "url": "https://www.skysports.com/football/news/11661/13390844/eberechi-eze-transfer-news-arsenal-agree-67-5m-deal-to-sign-crystal-palace-forward-after-hijacking-tottenham-move",
+      "content_preview": "It is that livewire maverick Arsenal will hope can unlock deep defences and bring a spark to their p",
+      "score": 0.8511741757392883
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "It is that livewire maverick Arsenal will hope can unlock deep defences and bring a spark to their p",
+      "score": 0.8511741757392883
+    },
+    {
+      "title": "Eberechi Eze: Can Arsenal's new No 10 help end the Gunners' long wait for a Premier League title?",
+      "url": "https://www.skysports.com/football/news/11095/13418096/eberechi-eze-can-arsenals-new-no-10-help-end-the-gunners-long-wait-for-a-premier-league-title",
+      "content_preview": "Aware of this, Arsenal have negotiated means of ensuring Saka remains a threat; however, the predict",
+      "score": 0.8575001955032349
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "url": "https://www.skysports.com/football/news/11095/13420137/kai-havertz-injury-arsenal-forward-undergoes-knee-surgery-but-gunners-hopeful-on-german-forwards-recovery-time",
+      "content_preview": "Arsenal manager Mikel Arteta will address Arsenal's injury news during his press conference on Frida",
+      "score": 0.8598586320877075
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "Arsenal have held a long-standing interest in Eze, who was previously on the books of their academy ",
+      "score": 0.8631346821784973
+    },
+    {
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "content_preview": "\"It does worry me. Some of the new signings, there was encouragement with that. They were getting yo",
+      "score": 0.8637317419052124
+    },
+    {
+      "title": "Ruben Amorim set for showdown talks with Manchester United hierarchy next week - Paper Talk",
+      "url": "https://www.skysports.com/football/news/11095/13420255/ruben-amorim-set-for-showdown-talks-with-manchester-united-hierarchy-next-week-paper-talk",
+      "content_preview": "Arsenal's move for Piero Hincapie is moving closer and the discussion with Bayer Leverkusen is over ",
+      "score": 0.8684722185134888
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward being assessed over knee problem",
+      "url": "https://www.skysports.com/football/news/11095/13415182/kai-havertz-injury-arsenal-forward-being-assessed-over-knee-problem",
+      "content_preview": "But once again, Arsenal are talking about injuries after it derailed them last season. Havertz, Gabr",
+      "score": 0.8700457811355591
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"We wish Michelle every success at Brighton and look forward to welcoming her back to Arsenal at the",
+      "score": 0.8709864020347595
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11661/13420346/premier-league-news-conferences-transfers-team-news-injury-latest-predictions-and-fpl-matchweek-3",
+      "content_preview": "Arteta on Arsenal's injury problems\nArsenal manager Mikel Arteta on addressing Arsenal's injury issu",
+      "score": 0.8771051168441772
+    },
+    {
+      "title": "Spurs boss Thomas Frank says he does not want 'players who don't want to be here' after Eberechi Eze opts for Arsenal transfer",
+      "url": "https://www.skysports.com/football/news/11675/13416148/spurs-boss-thomas-frank-says-he-does-not-want-players-who-dont-want-to-be-here-after-eberechi-eze-opts-for-arsenal-transfer",
+      "content_preview": "That alerted Arsenal, who had enquired about the 27-year-old earlier this summer, to reignite their ",
+      "score": 0.8773682117462158
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12507208/football-latest-news-gossip",
+      "content_preview": "Arsenal confirm 17 fans banned for abuse\nArsenal have confirmed they banned seventeen      supporter",
+      "score": 0.8781750798225403
+    },
+    {
+      "title": "Piero Hincapie transfer news: Arsenal agree season-long loan deal with option to buy defender",
+      "url": "https://www.skysports.com/football/news/11670/13418843/piero-hincapie-transfer-news-arsenal-agree-season-long-loan-deal-with-option-to-buy-defender",
+      "content_preview": "Arsenal have agreed a deal with Bayer Leverkusen to sign Piero Hincapie on a season-long loan with a",
+      "score": 0.8819518089294434
+    },
+    {
+      "title": "Leah Williamson injured: Arsenal defender and England captain to miss start of WSL season with knee injury",
+      "url": "https://www.skysports.com/football/news/37009/13415737/leah-williamson-injured-arsenal-defender-and-england-captain-to-miss-start-of-wsl-season-with-knee-injury",
+      "content_preview": "The 28-year-old is understood to have reported back to Arsenal with swelling in her right knee and s",
+      "score": 0.8856785297393799
+    }
+  ],
+  "bm25_search_results": [
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "DOWNLOAD THE SKY SPORTS APP\nCan't live without transfers? Then download the\nSky Sports app\nto make s"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Bending the rules? Yes - but it is something that is seen a lot in Arsenal's corner routines. So a s"
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "In his first season at the Etihad, Dias was named the 2020/21 Premier League Player of the Season an"
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "Since making the switch, Dias has enjoyed a trophy-laden five-year spell at the club, winning 10 tro"
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "Ruben Dias has committed his long-term future to Manchester City by signing a new deal contract to k"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "But if they still cannot stop Arsenal from corners - who else can?"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "So no matter what teams end up coming up with to foil Arsenal, the Gunners keep on scoring. Leeds an"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "After Palace tried that tactic, Spurs came to the Emirates and attempted something similar - but end"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"I think it was not an issue of having three players up, it was just that we have to be so sharp in "
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "didn't defend the second ball, the rebound,\" said Glasner."
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "The only problem? Arsenal still managed to score from a corner against Palace through Havertz. That "
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"The Man Utd game against Arsenal [where Arsenal scored twice from corners in a 2-0 win], United had"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"Usually they come with six running into the six-yard box, causing a lot of noise and trouble\" Cryst"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Crystal Palace, Brighton, Monaco and Spurs all left two or three players up on the halfway line, mea"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "It has not always worked, especially involving White. The England international tried a similar tact"
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "\"I love Manchester - it is my home now - and I love the Manchester City fans. Their support from day"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "In the 3-2 north London derby win at Spurs in 2024, Ben White was seen doing a similar trick on Gugl"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "With Arsenal looking to take advantage of every marginal gain a corner brings, this was another rule"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Despite the PGMOL looking to clamp down on holding in the box, VAR deem Saliba's interventions as no"
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Leeds goalkeeper Lucas Perri was also stuck by Saliba for Timber's first goal on Saturday. \"The goal"
+    }
+  ],
+  "rrf_fused_candidates": [
+    {
+      "title": "Eberechi Eze can take Arsenal to the Premier League title, says Paul Merson",
+      "url": "https://www.skysports.com/football/news/15205/13415592/eberechi-eze-can-take-arsenal-to-the-premier-league-title-says-paul-merson",
+      "content_preview": "It is that livewire maverick Arsenal will hope can unlock deep defences and bring a spark to their p",
+      "rrf_score": 0.04478277063878469
+    },
+    {
+      "title": "Liverpool growing in confidence on Crystal Palace's Marc Guehi deal while Bruno Fernandes is open to Man Utd exit next year - Paper Talk",
+      "url": "https://www.skysports.com/football/news/11095/13419694/liverpool-growing-in-confidence-on-crystal-palaces-marc-guehi-deal-while-bruno-fernandes-is-open-to-man-utd-exit-next-year-paper-talk",
+      "content_preview": "Arsenal have four more players - Piero Hincapie, Jon Martin, Arnau Martinez and Oscar Gloukh - on th",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/33694/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "content_preview": "DOWNLOAD THE SKY SPORTS APP\nCan't live without transfers? Then download the\nSky Sports app\nto make s",
+      "rrf_score": 0.01639344262295082
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Arsenal have won five corners this season, they have scored from three of them.",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Bending the rules? Yes - but it is something that is seen a lot in Arsenal's corner routines. So a s",
+      "rrf_score": 0.016129032258064516
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward being assessed over knee problem",
+      "url": "https://www.skysports.com/football/news/11095/13415182/kai-havertz-injury-arsenal-forward-being-assessed-over-knee-problem",
+      "content_preview": "What this situation does tell us, though, is that Arsenal will have to get Gyokeres on song soon, af",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "In his first season at the Etihad, Dias was named the 2020/21 Premier League Player of the Season an",
+      "rrf_score": 0.015873015873015872
+    },
+    {
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "content_preview": "\"This is a tough start. Arsenal are a tough team to break down. I'm not too downhearted. I thought t",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "Since making the switch, Dias has enjoyed a trophy-laden five-year spell at the club, winning 10 tro",
+      "rrf_score": 0.015625
+    },
+    {
+      "title": "Eberechi Eze Q&A: How Arsenal beat Tottenham Hotspur to Crystal Palace winger and what he can bring to Emirates",
+      "url": "https://www.skysports.com/football/news/11706/13415595/eberechi-eze-q-a-how-arsenal-beat-tottenham-hotspur-to-crystal-palace-winger-and-what-he-can-bring-to-emirates",
+      "content_preview": "Sky Sports' Ron Walker:\nLast season, Arsenal's biggest difficulty was breaking down teams with a low",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "Ruben Dias has committed his long-term future to Manchester City by signing a new deal contract to k",
+      "rrf_score": 0.015384615384615385
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "But if they still cannot stop Arsenal from corners - who else can?",
+      "rrf_score": 0.015151515151515152
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "So no matter what teams end up coming up with to foil Arsenal, the Gunners keep on scoring. Leeds an",
+      "rrf_score": 0.014925373134328358
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "After Palace tried that tactic, Spurs came to the Emirates and attempted something similar - but end",
+      "rrf_score": 0.014705882352941176
+    },
+    {
+      "title": "Eberechi Eze: Can Arsenal's new No 10 help end the Gunners' long wait for a Premier League title?",
+      "url": "https://www.skysports.com/football/news/11095/13418096/eberechi-eze-can-arsenals-new-no-10-help-end-the-gunners-long-wait-for-a-premier-league-title",
+      "content_preview": "Aware of this, Arsenal have negotiated means of ensuring Saka remains a threat; however, the predict",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"I think it was not an issue of having three players up, it was just that we have to be so sharp in ",
+      "rrf_score": 0.014492753623188406
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "url": "https://www.skysports.com/football/news/11095/13420137/kai-havertz-injury-arsenal-forward-undergoes-knee-surgery-but-gunners-hopeful-on-german-forwards-recovery-time",
+      "content_preview": "Arsenal manager Mikel Arteta will address Arsenal's injury news during his press conference on Frida",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "didn't defend the second ball, the rebound,\" said Glasner.",
+      "rrf_score": 0.014285714285714285
+    },
+    {
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "content_preview": "Arsenal have held a long-standing interest in Eze, who was previously on the books of their academy ",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "The only problem? Arsenal still managed to score from a corner against Palace through Havertz. That ",
+      "rrf_score": 0.014084507042253521
+    },
+    {
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "content_preview": "\"It does worry me. Some of the new signings, there was encouragement with that. They were getting yo",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"The Man Utd game against Arsenal [where Arsenal scored twice from corners in a 2-0 win], United had",
+      "rrf_score": 0.013888888888888888
+    },
+    {
+      "title": "Ruben Amorim set for showdown talks with Manchester United hierarchy next week - Paper Talk",
+      "url": "https://www.skysports.com/football/news/11095/13420255/ruben-amorim-set-for-showdown-talks-with-manchester-united-hierarchy-next-week-paper-talk",
+      "content_preview": "Arsenal's move for Piero Hincapie is moving closer and the discussion with Bayer Leverkusen is over ",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "\"Usually they come with six running into the six-yard box, causing a lot of noise and trouble\" Cryst",
+      "rrf_score": 0.0136986301369863
+    },
+    {
+      "title": "Kai Havertz injury: Arsenal forward being assessed over knee problem",
+      "url": "https://www.skysports.com/football/news/11095/13415182/kai-havertz-injury-arsenal-forward-being-assessed-over-knee-problem",
+      "content_preview": "But once again, Arsenal are talking about injuries after it derailed them last season. Havertz, Gabr",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Crystal Palace, Brighton, Monaco and Spurs all left two or three players up on the halfway line, mea",
+      "rrf_score": 0.013513513513513514
+    },
+    {
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "content_preview": "\"We wish Michelle every success at Brighton and look forward to welcoming her back to Arsenal at the",
+      "rrf_score": 0.013333333333333334
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "It has not always worked, especially involving White. The England international tried a similar tact",
+      "rrf_score": 0.013333333333333334
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11661/13420346/premier-league-news-conferences-transfers-team-news-injury-latest-predictions-and-fpl-matchweek-3",
+      "content_preview": "Arteta on Arsenal's injury problems\nArsenal manager Mikel Arteta on addressing Arsenal's injury issu",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "Ruben Dias: Manchester City defender signs new deal to keep him at the club until 2029",
+      "url": "https://www.skysports.com/football/news/11679/13416011/ruben-dias-manchester-city-defender-signs-new-deal-to-keep-him-at-the-club-until-2029",
+      "content_preview": "\"I love Manchester - it is my home now - and I love the Manchester City fans. Their support from day",
+      "rrf_score": 0.013157894736842105
+    },
+    {
+      "title": "Spurs boss Thomas Frank says he does not want 'players who don't want to be here' after Eberechi Eze opts for Arsenal transfer",
+      "url": "https://www.skysports.com/football/news/11675/13416148/spurs-boss-thomas-frank-says-he-does-not-want-players-who-dont-want-to-be-here-after-eberechi-eze-opts-for-arsenal-transfer",
+      "content_preview": "That alerted Arsenal, who had enquired about the 27-year-old earlier this summer, to reignite their ",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "In the 3-2 north London derby win at Spurs in 2024, Ben White was seen doing a similar trick on Gugl",
+      "rrf_score": 0.012987012987012988
+    },
+    {
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12507208/football-latest-news-gossip",
+      "content_preview": "Arsenal confirm 17 fans banned for abuse\nArsenal have confirmed they banned seventeen      supporter",
+      "rrf_score": 0.01282051282051282
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "With Arsenal looking to take advantage of every marginal gain a corner brings, this was another rule",
+      "rrf_score": 0.01282051282051282
+    },
+    {
+      "title": "Piero Hincapie transfer news: Arsenal agree season-long loan deal with option to buy defender",
+      "url": "https://www.skysports.com/football/news/11670/13418843/piero-hincapie-transfer-news-arsenal-agree-season-long-loan-deal-with-option-to-buy-defender",
+      "content_preview": "Arsenal have agreed a deal with Bayer Leverkusen to sign Piero Hincapie on a season-long loan with a",
+      "rrf_score": 0.012658227848101266
+    },
+    {
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "content_preview": "Despite the PGMOL looking to clamp down on holding in the box, VAR deem Saliba's interventions as no",
+      "rrf_score": 0.012658227848101266
+    }
+  ],
+  "final_ranked_documents": [
+    {
+      "rank": 1,
+      "rerank_score": 0.020210132002830505,
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "time": "2025-08-19 02:31:00",
+      "content_preview": "\"This is a tough start. Arsenal are a tough team to break down. I'm not too downhearted. I thought the system worked better and the back three did better."
+    },
+    {
+      "rank": 2,
+      "rerank_score": 0.007285059429705143,
+      "title": "Spurs boss Thomas Frank says he does not want 'players who don't want to be here' after Eberechi Eze opts for Arsenal transfer",
+      "url": "https://www.skysports.com/football/news/11675/13416148/spurs-boss-thomas-frank-says-he-does-not-want-players-who-dont-want-to-be-here-after-eberechi-eze-opts-for-arsenal-transfer",
+      "time": "2025-08-23 04:17:00",
+      "content_preview": "That alerted Arsenal, who had enquired about the 27-year-old earlier this summer, to reignite their interest and steal an 11th-hour march on their biggest rivals, with the England winger undergoing a "
+    },
+    {
+      "rank": 3,
+      "rerank_score": 0.004951334558427334,
+      "title": "",
+      "url": "https://www.skysports.com/football/live-blog/11095/12507208/football-latest-news-gossip",
+      "time": "2025-08-19 19:26:46",
+      "content_preview": "Arsenal confirm 17 fans banned for abuse\nArsenal have confirmed they banned seventeen      supporters for abusive and discriminatory behaviour last season.\nThe club have said it continues a year-on-ye"
+    },
+    {
+      "rank": 4,
+      "rerank_score": 0.003113528247922659,
+      "title": "Piero Hincapie transfer news: Arsenal agree season-long loan deal with option to buy defender",
+      "url": "https://www.skysports.com/football/news/11670/13418843/piero-hincapie-transfer-news-arsenal-agree-season-long-loan-deal-with-option-to-buy-defender",
+      "time": "2025-08-30 06:24:00",
+      "content_preview": "Arsenal have agreed a deal with Bayer Leverkusen to sign Piero Hincapie on a season-long loan with an option to buy.\nThe package is worth £45m and the Ecuador international has been given permission t"
+    },
+    {
+      "rank": 5,
+      "rerank_score": 0.001997673651203513,
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "time": "2025-08-24 04:23:00",
+      "content_preview": "But if they still cannot stop Arsenal from corners - who else can?"
+    },
+    {
+      "rank": 6,
+      "rerank_score": 0.0019715314265340567,
+      "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "url": "https://www.skysports.com/football/news/11095/13420137/kai-havertz-injury-arsenal-forward-undergoes-knee-surgery-but-gunners-hopeful-on-german-forwards-recovery-time",
+      "time": "2025-08-29 05:00:00",
+      "content_preview": "Arsenal manager Mikel Arteta will address Arsenal's injury news during his press conference on Friday afternoon, ahead of the Gunners' huge Premier League game away at Liverpool on Sunday, live on Sky"
+    },
+    {
+      "rank": 7,
+      "rerank_score": 0.0008970350027084351,
+      "title": "Michelle Agyemang: Lionesses forward rejoins Brighton on loan from Arsenal",
+      "url": "https://www.skysports.com/football/news/11095/13414640/michelle-agyemang-lionesses-forward-rejoins-brighton-on-loan-from-arsenal",
+      "time": "2025-08-22 19:34:00",
+      "content_preview": "\"We wish Michelle every success at Brighton and look forward to welcoming her back to Arsenal at the end of her loan.\""
+    },
+    {
+      "rank": 8,
+      "rerank_score": 0.0006657264311797917,
+      "title": "Eberechi Eze: Can Arsenal's new No 10 help end the Gunners' long wait for a Premier League title?",
+      "url": "https://www.skysports.com/football/news/11095/13418096/eberechi-eze-can-arsenals-new-no-10-help-end-the-gunners-long-wait-for-a-premier-league-title",
+      "time": "2025-08-31 17:59:00",
+      "content_preview": "Aware of this, Arsenal have negotiated means of ensuring Saka remains a threat; however, the predictability in attack means Arteta's free-flowing attacking side of perhaps a couple of seasons ago has "
+    },
+    {
+      "rank": 9,
+      "rerank_score": 0.0005992738879285753,
+      "title": "Ruben Amorim set for showdown talks with Manchester United hierarchy next week - Paper Talk",
+      "url": "https://www.skysports.com/football/news/11095/13420255/ruben-amorim-set-for-showdown-talks-with-manchester-united-hierarchy-next-week-paper-talk",
+      "time": "2025-08-29 07:40:00",
+      "content_preview": "Arsenal's move for Piero Hincapie is moving closer and the discussion with Bayer Leverkusen is over an initial loan deal.\nDAILY RECORD\nHammarby winger Sebastian Tounekti admits he is delighted to see "
+    },
+    {
+      "rank": 10,
+      "rerank_score": 0.0004542135284282267,
+      "title": "Man Utd 0-1 Arsenal: Ruben Amorim praises his side for not being 'boring' in defeat as Roy Keane criticises 'low expectations' at Old Trafford",
+      "url": "https://www.skysports.com/football/news/11095/13413837/man-utd-0-1-arsenal-ruben-amorim-praises-his-side-for-not-being-boring-in-defeat-as-roy-keane-criticises-low-expectations-at-old-trafford",
+      "time": "2025-08-19 02:31:00",
+      "content_preview": "\"It does worry me. Some of the new signings, there was encouragement with that. They were getting you up the pitch with a bit of power.\n\"Things will improve, it's tough against Arsenal, but no goals a"
+    },
+    {
+      "rank": 11,
+      "rerank_score": 0.00037095180596224964,
+      "title": "Arsenal's goals from corners: How can Premier League rivals stop Mikel Arteta and Nicolas Jover's set-piece tactics?",
+      "url": "https://www.skysports.com/football/news/11670/13415710/arsenals-goals-from-corners-how-can-premier-league-rivals-stop-mikel-arteta-and-nicolas-jovers-set-piece-tactics",
+      "time": "2025-08-24 04:23:00",
+      "content_preview": "The only problem? Arsenal still managed to score from a corner against Palace through Havertz. That was because there were fewer defenders on hand to react to the German scoring after the ball came of"
+    },
+    {
+      "rank": 12,
+      "rerank_score": 0.00030191862606443465,
+      "title": "Eberechi Eze joins Arsenal: Forward signs from Crystal Palace in £67.5m deal after Tottenham Hotspur move hijacked",
+      "url": "https://www.skysports.com/football/news/11095/13416014/eberechi-eze-joins-arsenal-forward-signs-from-crystal-palace-in-67-5m-deal-after-tottenham-hotspur-move-hijacked",
+      "time": "2025-08-24 07:02:00",
+      "content_preview": "Arsenal have held a long-standing interest in Eze, who was previously on the books of their academy and has said he was a supporter of the club growing up. It us understood Arsenal were very evident E"
+    }
+  ]
+}
