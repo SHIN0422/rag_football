@@ -51,7 +51,7 @@
         "옐로서브마린": "Villarreal",
         "발렌시아": "Valencia",
         "베티스": "Real Betis",
-        "베티스": "Real Betis",
+
 
         "유벤투스": "Juventus",
         "유베": "Juventus",
@@ -97,14 +97,14 @@
     "use_mmr": true,
     "mmr_k": 20,
     "mmr_fetch_k": 80,
-    "mmr_lambda": 0.7,
+    "mmr_lambda": 0.8,
 
 
     "use_reranker": true,
     "reranker_model": "BAAI/bge-reranker-base",
     "reranker_batch_size": 16,
     "reranker_max_length": 512,
-    "rrf_candidates_k": 36,
+    "rrf_candidates_k": 40,
 
     "log_reranker_debug": true,
     "log_top_n": 12,

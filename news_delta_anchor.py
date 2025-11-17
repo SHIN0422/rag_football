@@ -12,13 +12,16 @@ from bs4 import BeautifulSoup
 # - links.json     (cumulative deduped set)
 # - state_links.json {anchor_url (HEAD/NEWEST), recent_urls, last_run_at}
 
-LISTING_URL_TPL = "https://www.skysports.com/listing/basket/11095/{page}?sortOrder=publishDate&_xhr"
+LISTING_URL_TPL = "https://www.skysports.com/listing/basket/11095/{page}?sortOrder=publishDate"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 STATE_FILE = "state_links.json" # 가장 최근에 저장한 링크 저장
 CUMULATIVE_LINKS = "links.json" # 누적 링크
 DELTA_LINKS = "links_new.json" # 새로 발견한 링크
 ALLOW_PREFIXES = ("/football/news", "/football/live-blog")
 LIVE_ACTIVE_FILE = "live_active.json" # 라이브 업데이트 뉴스 저장용
+
+# news_delta_anchor.py 파일 상단에 이 변수를 추가하거나 수정하세요.
+MAIN_URL = "https://www.skysports.com/football/news" # 1페이지에서 가져올 메인 URL
 
 # LinkState 객체 생성용
 @dataclass
@@ -71,21 +74,69 @@ def parse_listing_items(html_fragment: str) -> List[str]:
             seen.add(u); out.append(u)
     return out  # ORDER: newest -> older as they appear in listing
 
+
+def parse_listing_items_1page(html_fragment: str) -> List[str]:
+    soup = BeautifulSoup(html_fragment, "html.parser")
+    urls: List[str] = []
+
+    # 1. 뉴스 기사 목록을 감싸고 있는 큰 틀(div)을 먼저 찾습니다.
+    container = soup.find("div", class_="sdc-site-tiles__group")
+
+    # 2. 만약 해당 영역이 없다면, 아무 작업도 하지 않고 종료합니다.
+    if not container:
+        print("[WARN] 뉴스 목록 컨테이너(<div class=\"sdc-site-tiles__group\">)를 찾을 수 없습니다.")
+        return []
+
+    # 3. 찾은 컨테이너 안에서만 모든 링크(a 태그)를 검색합니다.
+    for a in container.find_all("a", href=True):
+        h = a["href"]
+        if any(h.startswith(p) for p in ALLOW_PREFIXES):
+            if h.startswith("/"):
+                h = "https://www.skysports.com" + h
+            urls.append(h)
+
+    # 중복을 제거하면서 순서를 유지합니다.
+    seen = set()
+    out = []
+    for u in urls:
+        if u not in seen:
+            seen.add(u)
+            out.append(u)
+            
+    return out  # ORDER: newest -> older as they appear in listing
+
 # 뉴스 링크 목록을 가져와 parse_listing_items에 전달
 def fetch_listing_page(sess: requests.Session, page: int) -> List[str]:
-    urls = []
-    try:
-        # XHR 방식
+    """
+    1페이지는 메인 HTML에서, 2페이지부터는 JSON API에서 링크를 가져옵니다.
+    """
+    html = ""
+    
+    if page == 1:
+        # 1페이지일 경우, 메인 URL에서 직접 HTML을 가져옵니다.
+        print(f"[DBG] page=1, fetching from MAIN_URL: {MAIN_URL}")
+        r = sess.get(MAIN_URL, timeout=10)
+        r.raise_for_status()
+        html = r.text # 응답 전체가 HTML 텍스트입니다.
+        urls = parse_listing_items_1page(html)
+    else:
+        # 2페이지 이상일 경우, 기존의 JSON 방식을 사용합니다.
         url = LISTING_URL_TPL.format(page=page)
+        print(f"[DBG] page={page}, fetching from JSON API: {url}")
         r = sess.get(url, timeout=10)
         r.raise_for_status()
-        data = r.json()
-        html = data.get("items", "")
+        try:
+            # XHR 방식 (JSON 응답)
+            data = r.json()
+            html = data.get("items", "") # HTML 조각이 items 키에 들어있습니다.
+        except requests.exceptions.JSONDecodeError:
+            # 혹시 모를 예외 처리 (JSON이 아닌 일반 HTML로 올 경우)
+            html = r.text
         urls = parse_listing_items(html)
-        print(f"[DBG] page={page}, urls={len(urls)}")
-    except Exception:
-        pass
 
+    # HTML 파싱 로직은 페이지에 상관없이 동일하게 작동합니다.
+    
+    print(f"[DBG] page={page}, urls_found={len(urls)}")
     return urls
 
 # 앵커랑 비교해서 뉴스 가져옴

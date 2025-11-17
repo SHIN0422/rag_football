@@ -14,6 +14,57 @@ load_dotenv()
 API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 API_FOOTBALL_KEY  = os.getenv("APIFOOTBALL_KEY")  # 환경변수에 키 저장
 
+# analysis.py 에 추가
+
+def build_match_data_bundle(fixture_id: str, matches_list: list = None) -> dict:
+    """
+    하나의 경기에 대한 모든 관련 데이터를 API에서 가져와 하나의 딕셔너리로 묶습니다.
+    (기존 rag.py의 _build_full_context_json 함수와 동일한 로직)
+    """
+    import json
+    # fixture_id에 해당하는 경기 메타 정보 찾기
+    meta = None
+    if matches_list:
+        for m in matches_list:
+            if str(m.get("match_id")) == str(fixture_id):
+                meta = m
+                break
+
+    # 필수 데이터: 선수 스탯, 팀 통계, 이벤트, 라인업
+    try: rows, _ = fetch_player_stats_official(str(fixture_id))
+    except Exception: rows = []
+    try: tstats = fetch_team_match_stats_official(str(fixture_id))
+    except Exception: tstats = []
+    try: events = fetch_fixture_events_official(str(fixture_id))
+    except Exception: events = []
+    try: lineups = fetch_fixture_lineups_official(str(fixture_id))
+    except Exception: lineups = []
+
+    # 부가 정보 (시즌 통계, 부상)
+    home_season, away_season = {}, {}
+    inj_h, inj_a = [], []
+    if meta and meta.get("league_id") and meta.get("season") and meta.get("home_id") and meta.get("away_id"):
+        try:
+            lid, ssn = int(meta["league_id"]), int(meta["season"])
+            hid, aid = int(meta["home_id"]), int(meta["away_id"])
+            home_season = fetch_team_season_stats_official(hid, lid, ssn) or {}
+            away_season = fetch_team_season_stats_official(aid, lid, ssn) or {}
+            inj_h = fetch_injuries_official(hid, lid, ssn) or []
+            inj_a = fetch_injuries_official(aid, lid, ssn) or []
+        except Exception:
+            pass
+
+    bundle = {
+        "meta": meta or {"fixture_id": fixture_id}, # meta가 없어도 기본 정보는 포함
+        "players": rows,
+        "teams_match_stats": tstats,
+        "events": events,
+        "lineups": lineups,
+        "season_summaries": {"home": home_season, "away": away_season},
+        "injuries": {"home": inj_h, "away": inj_a},
+    }
+    return bundle
+
 # "team.players.0.name" 형태로 평탄화
 def _flatten(obj: Any, parent: str = "", sep: str = ".") -> Dict[str, Any]:
     """

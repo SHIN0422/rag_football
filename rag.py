@@ -22,6 +22,138 @@ try:
 except Exception:
     KST = None
 
+
+
+RAGAS_DATASET_FILE = Path(__file__).parent / "ragas_dataset.jsonl"
+DISSATISFIED_FILE = Path(__file__).parent / "feedback_dissatisfied.jsonl"
+
+
+# rag.py 파일의 UI 코드 블록 위에 추가
+
+# 데이터 저장 경로 설정 (없으면 생성)
+DATA_DIR = Path(__file__).parent / "game_data"
+DATA_DIR.mkdir(exist_ok=True)
+
+# API 호출 간격 (초)
+FETCH_INTERVAL_SECONDS = 3600  # 1시간
+
+# rag.py 파일의 UI 코드 블록 위에 있는 이 함수를 교체하세요.
+
+# rag.py에 있는 이 함수를 아래 코드로 통째로 교체하세요.
+
+def fetch_and_save_finished_matches():
+    """[개선됨] 5대 리그의 종료된 경기만 찾아, 내용이 있으면 날짜별 폴더에 저장합니다."""
+    print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] 백그라운드: 5대 리그의 종료된 경기 확인 시작...")
+
+    major_league_ids = set(LEAGUE_ID.values())
+    today = datetime.now().strftime("%Y-%m-%d")
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    d_b_yesterday = (datetime.now() - timedelta(days=2)).strftime("%Y-%m-%d")
+
+    try:
+        matches_today = analysis.fetch_matches_official(today)
+        matches_yesterday = analysis.fetch_matches_official(yesterday)
+        matches_d_b_yesterday = analysis.fetch_matches_official(d_b_yesterday)
+        all_matches = matches_today + matches_yesterday + matches_d_b_yesterday
+    except Exception as e:
+        print(f"  [백그라운드 오류] 경기 목록을 가져오는 데 실패했습니다: {e}")
+        return
+
+    finished_statuses = {"FT", "AET", "PEN"} 
+
+    for match_summary in all_matches:
+        status = match_summary.get("status")
+        fixture_id = match_summary.get("match_id")
+        league_id = match_summary.get("league_id")
+
+        if not fixture_id or status not in finished_statuses or league_id not in major_league_ids:
+            continue
+
+        # 파일 존재 여부를 여기서 미리 체크하지 않고, 데이터를 가져온 후에 최종 경로에 대해 체크합니다.
+        
+        try:
+            # 1. 경기의 전체 데이터 묶음을 가져옵니다.
+            full_data_bundle = analysis.build_match_data_bundle(str(fixture_id), all_matches)
+
+            # 2. ★★★ (새 로직) 내용이 비어있는 경기인지 확인합니다. ★★★
+            # 선수 데이터와 팀 통계가 모두 비어있으면 '빈 경기'로 판단합니다.
+            is_empty = not full_data_bundle.get("players")
+
+            if is_empty:
+                print(f"  [정보 없음] 경기 ID {fixture_id}는 데이터가 비어있어 건너뜁니다.")
+                continue  # 다음 경기로 넘어갑니다.
+
+            # 3. ★★★ (새 로직) 날짜 기반으로 저장 경로를 설정합니다. ★★★
+            meta = full_data_bundle.get("meta", {})
+            kickoff_time = meta.get("kickoff_local", "")  # 예: "2025-10-04 22:00"
+            if not kickoff_time:
+                print(f"  [오류] 경기 ID {fixture_id}의 시작 시간을 알 수 없어 건너뜁니다.")
+                continue
+
+            match_date_str = kickoff_time.split(" ")[0]  # "2025-10-04"
+            date_folder_path = DATA_DIR / match_date_str
+            
+            # 날짜 폴더가 없으면 생성합니다.
+            date_folder_path.mkdir(parents=True, exist_ok=True)
+            
+            save_path = date_folder_path / f"{fixture_id}.json"
+
+            # 최종 경로에 파일이 이미 있으면 건너뜁니다.
+            if save_path.exists():
+                continue
+
+            # 4. 파일로 저장합니다.
+            with open(save_path, "w", encoding="utf-8") as f:
+                json.dump(full_data_bundle, f, ensure_ascii=False, indent=2)
+            print(f"  [성공] 경기 데이터 저장 완료: {save_path}")
+            time.sleep(5)
+
+        except Exception as e:
+            print(f"  [백그라운드 오류] 경기 ID {fixture_id} 데이터 처리 중 오류 발생: {e}")
+
+    print(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] 백그라운드: 확인 완료.")
+
+
+# rag.py에 있는 이 함수를 아래 코드로 통째로 교체하세요.
+
+def save_feedback(interaction_data: dict, feedback_type: str, reason: str = ""):
+    """
+    사용자의 피드백을 받아 적절한 파일에 JSONL 형식으로 저장합니다.
+    불만족 시 '이유'도 함께 저장합니다.
+    """
+    if not interaction_data:
+        gr.Warning("저장할 데이터가 없습니다. 먼저 질문을 실행해주세요.")
+        # 모든 피드백 UI 숨기기
+        return gr.update(visible=False), gr.update(visible=False)
+
+    contexts_str = [doc.page_content for doc in interaction_data.get("contexts", [])]
+    
+    record = {
+        "question": interaction_data.get("question", ""),
+        "answer": interaction_data.get("answer", ""),
+        "contexts": contexts_str,
+    }
+
+    if feedback_type == "satisfied":
+        filepath = RAGAS_DATASET_FILE
+        gr.Info("👍 피드백 감사합니다! RAGAs 데이터셋에 저장되었습니다.")
+    else: # dissatisfied
+        filepath = DISSATISFIED_FILE
+        # ★★★ 불만족일 경우, 이유를 record에 추가 ★★★
+        record["reason"] = reason
+        gr.Warning("👎 개선에 참고하겠습니다. 불만족 데이터로 저장되었습니다.")
+
+    try:
+        with open(filepath, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception as e:
+        gr.Error(f"피드백 저장 중 오류 발생: {e}")
+
+    # 피드백 후 모든 관련 UI 다시 숨기기
+    return gr.update(visible=False), gr.update(visible=False)
+
+
+
 # ★ 추가: 유럽 5대 리그(API-FOOTBALL 리그 ID)
 LEAGUE_ID = {
     "EPL": 39,         # 잉글랜드 프리미어리그
@@ -29,6 +161,9 @@ LEAGUE_ID = {
     "SERIEA": 135,     # 이탈리아 세리에 A
     "BUNDES": 78,      # 독일 분데스리가
     "LIGUE1": 61,      # 프랑스 리그 1
+    "UCL": 2,          # UEFA 챔피언스 리그
+    "UEL": 3,          # UEFA 유로파 리그
+    "UECL": 848,       # UEFA 유로파 컨퍼런스 리그
 }
 
 # matches: 경기 정보를 담은 딕셔너리 리스트
@@ -99,39 +234,70 @@ def _normalize_date_input(x):
 import analysis
 
 # 사용자가 선택한 리그의 정보를 통해 경기를 필터링하고 드롭다운 생성
-def ui_load_matches_selectable(date_value, use_epl: bool, use_laliga: bool, use_seriea: bool, use_bundes: bool, use_ligue1: bool):
-    d = _normalize_date_input(date_value)
-    if not d:
+# rag.py의 ui_load_matches_selectable 함수를 아래 코드로 교체하세요.
+
+import json
+from pathlib import Path
+
+# 파일 상단에 추가
+GAME_DATA_DIR = Path(__file__).parent / "game_data"
+
+# ... (기존 코드) ...
+
+# rag.py에 있는 이 함수를 아래 코드로 통째로 교체하세요.
+
+def ui_load_matches_selectable(date_value, use_epl: bool, use_laliga: bool, use_seriea: bool, use_bundes: bool, use_ligue1: bool, use_ucl: bool, use_uel: bool, use_uecl: bool):
+    d_str = _normalize_date_input(date_value)
+    if not d_str:
         return "<em>날짜를 선택해주세요.</em>", gr.update(choices=[], value=None), []
 
-    try:
-        # ★ API-FOOTBALL만 사용
-        matches = analysis.fetch_matches_official(d, tz="Asia/Seoul")
+    matches = []
+    
+    # ★★★ (개선된 로직) 사용자가 선택한 날짜의 폴더 경로를 직접 지정합니다. ★★★
+    date_folder_path = GAME_DATA_DIR / d_str
+    
+    # 해당 날짜의 폴더가 존재하면, 그 안의 JSON 파일들만 읽어옵니다.
+    if date_folder_path.exists():
+        for file_path in date_folder_path.glob("*.json"):
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                matches.append(data)
+            except Exception as e:
+                print(f"파일 로드 오류 {file_path}: {e}")
 
-        # ★ 체크된 리그만 남기기
-        selected_ids = set()
-        if use_epl:     selected_ids.add(LEAGUE_ID["EPL"])
-        if use_laliga:  selected_ids.add(LEAGUE_ID["LALIGA"])
-        if use_seriea:  selected_ids.add(LEAGUE_ID["SERIEA"])
-        if use_bundes:  selected_ids.add(LEAGUE_ID["BUNDES"])
-        if use_ligue1:  selected_ids.add(LEAGUE_ID["LIGUE1"])
+    if not matches:
+        return f"<em>{d_str}에 저장된 경기 데이터가 없습니다.</em>", gr.update(choices=[], value=None), []
 
-        matches = _filter_by_league_ids(matches, selected_ids)
+    # (이하 리그 필터링 및 화면 표시는 기존과 동일합니다)
+    selected_ids = set()
+    if use_epl:     selected_ids.add(LEAGUE_ID["EPL"])
+    if use_laliga:  selected_ids.add(LEAGUE_ID["LALIGA"])
+    if use_seriea:  selected_ids.add(LEAGUE_ID["SERIEA"])
+    if use_bundes:  selected_ids.add(LEAGUE_ID["BUNDES"])
+    if use_ligue1:  selected_ids.add(LEAGUE_ID["LIGUE1"])
+    if use_ucl:     selected_ids.add(LEAGUE_ID["UCL"])
+    if use_uel:     selected_ids.add(LEAGUE_ID["UEL"])
+    if use_uecl:    selected_ids.add(LEAGUE_ID["UECL"])
 
-        # 표 렌더 (render_matches_html 있으면 사용)
-        html_table = analysis.render_matches_html(matches, with_links=False) # with_links 없애도 될거 같은데 일단 보류
+    if selected_ids:
+        matches = [m for m in matches if m.get("meta", {}).get("league_id") in selected_ids]
 
-        # 드롭다운 채우기
-        choices = []
-        for i, m in enumerate(matches):
-            mid = str(m.get("match_id") or "")
-            lab = f"{i:02d}. {m.get('kickoff_local','')} | {m.get('league','')} | {m.get('home','?')} vs {m.get('away','?')} (ID:{mid})"
-            choices.append((lab, mid))
-        default_val = choices[0][1] if choices else None
+    matches.sort(key=lambda x: x.get("meta", {}).get("kickoff_local", ""))
 
-        return html_table, gr.update(choices=choices, value=default_val), matches
-    except Exception as e:
-        return f"<em>경기 불러오기 오류: {e}</em>", gr.update(choices=[], value=None), []
+    match_summaries = [m['meta'] for m in matches]
+    html_table = analysis.render_matches_html(match_summaries, with_links=False)
+
+    choices = []
+    for i, m_data in enumerate(matches):
+        meta = m_data.get('meta', {})
+        mid = str(meta.get("match_id") or "")
+        lab = f"{i:02d}. {meta.get('kickoff_local','')} | {meta.get('league','')} | {meta.get('home','?')} vs {meta.get('away','?')} (ID:{mid})"
+        choices.append((lab, mid))
+    
+    default_val = choices[0][1] if choices else None
+
+    return html_table, gr.update(choices=choices, value=default_val), matches
 
 
 def ui_fetch_player_stats(fixture_id: str):
@@ -287,91 +453,42 @@ def _build_prompt_for_mode(
          "질문: {q}\n\n---\nCONTEXT_JSON:\n{ctx_json}\n\n"
          "섹션 계획:\n{sections}\n")
     ])
-    chain = prompt | llm | parser
-    return llm, lambda vars: chain.invoke({"q": q, "ctx_json": full_ctx_json, "sections": section_lines})
+    final_chain = RunnablePassthrough.assign(
+        sections=lambda x: section_lines
+    ) | prompt | llm | parser
+    
+    return llm, final_chain
 
-
-# === ADD: 풀 컨텍스트 생성 (표시 X, LLM 전용) ===
-def _build_full_context_json(fixture_id: str, matches_state: list) -> str:
-    import json
-    # 메타 찾기: 없으면 None
-    meta = None
-    for m in matches_state or []:
-        if str(m.get("match_id")) == str(fixture_id):
-            meta = m; break
-
-    # 필수: 선수 스탯 + 팀집계/타임라인/라인업
-    try: rows, _raw_players = analysis.fetch_player_stats_official(str(fixture_id)) # raw_playres는 json 원본
-    except Exception: rows = []
-    try: tstats = analysis.fetch_team_match_stats_official(str(fixture_id))
-    except Exception: tstats = []
-    try: events = analysis.fetch_fixture_events_official(str(fixture_id))
-    except Exception: events = []
-    try: lineups = analysis.fetch_fixture_lineups_official(str(fixture_id))
-    except Exception: lineups = []
-
-    # 시즌/부상(메타 있으면 홈/원정 모두)
-    home_season = away_season = {}
-    inj_h = inj_a = []
-    try:
-        if meta and meta.get("league_id") and meta.get("season") and meta.get("home_id") and meta.get("away_id"):
-            lid = int(meta["league_id"]); ssn = int(meta["season"])
-            hid = int(meta["home_id"]);  aid = int(meta["away_id"])
-            try: home_season = analysis.fetch_team_season_stats_official(hid, lid, ssn) or {}
-            except Exception: pass
-            try: away_season = analysis.fetch_team_season_stats_official(aid, lid, ssn) or {}
-            except Exception: pass
-            try: inj_h = analysis.fetch_injuries_official(hid, lid, ssn) or []
-            except Exception: pass
-            try: inj_a = analysis.fetch_injuries_official(aid, lid, ssn) or []
-            except Exception: pass
-    except Exception:
-        pass
-
-    bundle = {
-        "meta": {
-            "league_id": meta.get("league_id") if meta else None,
-            "season": meta.get("season") if meta else None,
-            "fixture_id": fixture_id,
-            "kickoff_local": meta.get("kickoff_local") if meta else None,
-            "home": {"id": meta.get("home_id") if meta else None, "name": meta.get("home") if meta else None},
-            "away": {"id": meta.get("away_id") if meta else None, "name": meta.get("away") if meta else None},
-            "status": meta.get("status") if meta else None,
-        },
-        "players": rows,                 # ← 선수별 stat.* 전부
-        "teams_match_stats": tstats,     # ← fixtures/statistics
-        "events": events,                # ← fixtures/events
-        "lineups": lineups,              # ← fixtures/lineups
-        "season_summaries": {"home": home_season, "away": away_season},
-        "injuries": {"home": inj_h, "away": inj_a},
-    }
-
-    # 로그파일에 남김
-    try:
-        log_path = Path(__file__).parent / f"context_bundle_{fixture_id}.json"
-        with open(log_path, "w", encoding="utf-8") as f:
-            json.dump(bundle, f, ensure_ascii=False, indent=2)
-        print(f"[log] context bundle saved: {log_path}")
-    except Exception as e:
-        print(f"[log] failed to save context bundle: {e}")
-
-    return json.dumps(bundle, ensure_ascii=False, separators=(",", ":"))
 
 # === ADD: 질문 → (전 데이터 자동수집) → LLM 답변 (UI엔 답만 보여줌) ===
+# rag.py의 ui_analyze_match_full_auto 함수를 아래 코드로 교체하세요.
+
 def ui_analyze_match_full_auto(question: str, fixture_id: str, matches_state: list):
-    # fixture_id가 비어있으면 목록의 첫 경기 자동 선택
-    if not fixture_id and (matches_state or []):
-        fixture_id = str((matches_state[0] or {}).get("match_id") or "")
     if not fixture_id:
-        return "<em>경기를 먼저 불러오세요.</em>"
+        yield "<em>경기를 먼저 선택하세요.</em>"
+        return
 
-    ctx_json = _build_full_context_json(fixture_id, matches_state)
+    # matches_state에서 해당 fixture_id의 데이터를 찾습니다.
+    match_data = None
+    for m in matches_state:
+        if str(m.get("meta", {}).get("match_id")) == fixture_id:
+            match_data = m
+            break
+    
+    if not match_data:
+        yield f"<em>오류: 선택된 경기(ID: {fixture_id})의 데이터를 찾을 수 없습니다.</em>"
+        return
 
-    # 컨텍스트는 '전부' 사용. 너무 클 경우를 대비해 간단 압축(문자 길이 기준)
+    # 데이터를 JSON 문자열로 변환
+    ctx_json = json.dumps(match_data, ensure_ascii=False, separators=(",", ":"))
+
+    # ★★★★★
+    # 토큰 예산 초과 시 데이터 줄이는 로직은 그대로 유지합니다.
+    # (코드가 길어 생략하지만, 기존의 _approx_tokens와 budget 관련 로직은 여기에 있어야 합니다)
     def _approx_tokens(s: str) -> int: return max(1, len(s)//4)
-    budget = 120000  # 모델 토큰 한도에 맞춰 조절(예: 128k 모델)
+    budget = 120000  # 모델 토큰 한도에 맞춰 조절
     if _approx_tokens(ctx_json) > budget:
-        # 큰 섹션(특히 players, events)부터 앞부분만 남김
+        # (기존 코드와 동일)
         import json as _json
         try:
             data = _json.loads(ctx_json)
@@ -385,34 +502,22 @@ def ui_analyze_match_full_auto(question: str, fixture_id: str, matches_state: li
             ctx_json = _json.dumps(slim, ensure_ascii=False, separators=(",", ":"))
         except Exception:
             pass
-
+    # ★★★★★
 
     mode = _detect_stats_mode(question)
-
-    # 모드별 프롬프트 생성
     llm, chain = _build_prompt_for_mode(mode, question, ctx_json, max_tokens=2000)
 
     try:
-        if callable(chain):
-            return chain({"q": question, "ctx_json": ctx_json})
-        return chain.invoke({"q": question, "ctx_json": ctx_json})
+        stream = chain.stream({"q": question, "ctx_json": ctx_json})
+        full_response = ""
+        for chunk in stream:
+            content = chunk if isinstance(chunk, str) else chunk.content if hasattr(chunk, "content") else ""
+            full_response += content
+            yield full_response
     except Exception as e:
-        return f"분석 중 오류: {e}"
-
-    # LLM 체인(간단): 시스템+휴먼
-    # prompt = ChatPromptTemplate.from_messages([
-    #     ("system",
-    #      "너는 축구 경기 분석 전문가다. "
-    #      "반드시 제공된 JSON 데이터만 사용하여 답변해야 한다. "
-    #      "모든 주장과 설명은 반드시 수치와 데이터에 근거해야 한다. "
-    #      "추측이나 외부 지식을 추가하지 말고, 답변은 한국어로 작성하라."),
-    #     ("human", "질문: {q}\n\n---\nCONTEXT_JSON:\n{ctx_json}")
-    # ])
-    # chain = prompt | llm | parser
-    # try:
-    #     return chain.invoke({"q": question, "ctx_json": ctx_json})
-    # except Exception as e:
-    #     return f"분석 중 오류: {e}"
+        import traceback
+        traceback.print_exc()
+        yield f"분석 중 오류: {e}"
 
 """
 여기까지 경기 분석에서 사용하는 함수
@@ -598,51 +703,103 @@ def gpt_translate_korean_to_english(query: str, model="gpt-4o-mini") -> str:
     return chain.invoke({"q": query})
 
 # bm25 검색기 생성, 30개
+# rag.py 파일 상단에 import가 있는지 확인 (없으면 추가)
+import pickle
+from pathlib import Path
+
+# build_global_bm25 함수를 아래 내용으로 완전히 교체하세요.
 def build_global_bm25():
-    """전 코퍼스 BM25 인덱스 재생성 (ids를 include로 요청하지 않음)"""
-    global bm25_global, bm25_doc_count
+    """
+    인덱스 파일이 있으면 로드하고, 새로운 문서만 DB에서 가져와 업데이트 후 다시 저장합니다.
+    """
+    global bm25_global, bm25_doc_count, bm25_all_docs
+
+    base_path = Path(__file__).resolve().parent
+    bm25_index_path = base_path / "bm25_index.pkl"
+    
     db = Chroma(
-        persist_directory=str((Path(__file__).resolve().parent / "news_chroma_db")),
+        persist_directory=str(base_path / "news_chroma_db"),
         embedding_function=hf_embeddings,
         collection_name="news_collection",
     )
-    raw = db.get(include=["documents", "metadatas"])  # ✅ ids 금지
-    all_docs = [
+
+    # 1. 기존 인덱스 파일에서 이전 데이터(문서 목록, 처리된 ID)를 불러옵니다.
+    old_docs = []
+    processed_ids = set()
+    if bm25_index_path.exists():
+        try:
+            with open(bm25_index_path, "rb") as f:
+                saved_data = pickle.load(f)
+                old_docs = saved_data.get('docs', [])
+                # 이전 버전 호환을 위해 문서 내용으로 ID를 대체할 수도 있습니다.
+                processed_ids = saved_data.get('ids', {d.metadata.get('id') for d in old_docs})
+            print(f"[bm25] {len(processed_ids)}개의 기존 문서 정보를 파일에서 로드했습니다.")
+        except Exception as e:
+            print(f"[bm25] 인덱스 파일 로드 실패: {e}. 새로 생성합니다.")
+            old_docs = []
+            processed_ids = set()
+
+    # 2. ChromaDB에서 현재 저장된 모든 문서의 ID를 가져옵니다. (내용은 가져오지 않음)
+    try:
+        all_db_ids = set(db.get(include=[])['ids'])
+        if not all_db_ids:
+            print("[bm25] DB에 문서가 없습니다.")
+            return 0
+    except Exception as e:
+        print(f"[bm25] DB에서 ID를 가져오는 데 실패했습니다: {e}")
+        return len(old_docs)
+
+    # 3. 이미 처리한 ID를 제외하여 '새로운 문서 ID'만 찾아냅니다.
+    new_doc_ids = list(all_db_ids - processed_ids)
+
+    # 4. 새로운 문서가 없으면, 아무 작업도 하지 않고 현재 상태를 유지합니다.
+    if not new_doc_ids:
+        print("[bm25] 새로운 문서가 없습니다. 인덱스가 최신 상태입니다.")
+        # 전역 변수가 비어있을 경우를 대비해 다시 로드
+        if bm25_global is None and old_docs:
+            bm25_global = BM25Retriever.from_documents(old_docs)
+            bm25_global.k = int(config.get("bm25_k", 30))
+            bm25_all_docs = old_docs
+            bm25_doc_count = len(old_docs)
+        return len(processed_ids)
+
+    # 5. 새로운 문서가 있다면, '새로운 문서만' DB에서 가져옵니다. (효율적!)
+    print(f"[bm25] {len(new_doc_ids)}개의 새로운 문서를 DB에서 가져옵니다.")
+    new_docs_data = db.get(ids=new_doc_ids, include=["documents", "metadatas"])
+    new_docs = [
         Document(page_content=c, metadata=m)
-        for c, m in zip(raw.get("documents", []), raw.get("metadatas", []))
+        for c, m in zip(new_docs_data.get("documents", []), new_docs_data.get("metadatas", []))
         if c
     ]
-    bm25 = BM25Retriever.from_documents(all_docs)
-    bm25.k = int(config.get("bm25_k", 30))  # 회수 폭 살짝 넓힘
+    
+    # 6. 기존 문서 목록과 새로운 문서 목록을 합칩니다.
+    final_docs = old_docs + new_docs
+    
+    # 7. 합쳐진 전체 목록으로 BM25 인덱스를 새로 만듭니다.
+    print(f"[bm25] 총 {len(final_docs)}개 문서로 인덱스를 재생성합니다...")
+    bm25 = BM25Retriever.from_documents(final_docs)
+    bm25.k = int(config.get("bm25_k", 30))
+    
+    # 8. 전역 변수를 업데이트하고, 다음 실행을 위해 최신 정보를 파일에 저장합니다.
     bm25_global = bm25
-    global bm25_all_docs
-    bm25_all_docs = all_docs
-    # 안전한 문서 수 확인
-    try:
-        bm25_doc_count = db._collection.count()
-    except Exception:
-        bm25_doc_count = len(raw.get("documents", []))
+    bm25_all_docs = final_docs
+    bm25_doc_count = len(final_docs)
 
-    print(f"[bm25] rebuilt: docs={bm25_doc_count}, k={bm25_global.k}")
+    try:
+        with open(bm25_index_path, "wb") as f:
+            # 이제 문서 목록과 함께 전체 ID 목록도 저장합니다.
+            pickle.dump({'docs': final_docs, 'ids': all_db_ids}, f)
+        print(f"[bm25] 최신 인덱스 정보를 파일에 저장했습니다: {bm25_index_path}")
+    except Exception as e:
+        print(f"[bm25] 인덱스 파일 저장 실패: {e}")
+
     return bm25_doc_count
 
 # db문서 수가 달라지면 build_global_bm25를 호출하여 갱신
 def refresh_bm25_if_stale():
     """DB 문서 수가 변하면 BM25를 자동 갱신"""
-    from langchain_community.vectorstores import Chroma
-    from pathlib import Path
-    global bm25_doc_count, bm25_global, hf_embeddings
-
     try:
-        db = Chroma(
-            persist_directory=str((Path(__file__).resolve().parent / "news_chroma_db")),
-            embedding_function=hf_embeddings,
-            collection_name="news_collection",
-        )
-        # ✅ 절대 db.get(include=["ids"]) 쓰지 말 것
-        cnt = db._collection.count()
-        if cnt != bm25_doc_count or bm25_global is None:
-            build_global_bm25()
+        build_global_bm25()
     except Exception as e:
         print(f"[bm25] refresh failed: {e}")
 
@@ -679,6 +836,100 @@ def rerank_with_cross_encoder(query: str, docs, top_n=12, batch_size=16):
     ranked = sorted(zip(docs, scores), key=lambda x: x[1], reverse=True)
     return [d for d, _ in ranked[:top_n]]
 
+#뉴스 요약에서 카테고리 분류
+def _detect_news_category(q: str) -> str:
+    """
+    GPT를 이용해 뉴스 질문을 다음 카테고리 중 하나로 분류합니다.
+    'transfer', 'injury', 'preview', 'review', 'performance', 'general'
+    """
+    prompt = f"""
+        당신은 사용자의 축구 '뉴스' 질문을 분석하여 핵심 의도를 파악하는 AI입니다.
+        질문의 의도를 다음 6가지 카테고리 중 하나로만 분류하세요.
+
+        - transfer: 이적설, 영입, 방출, 재계약 관련 질문
+        - injury: 선수의 부상, 징계, 컨디션 문제 관련 질문
+        - preview: 앞으로 열릴 경기에 대한 예측, 관전 포인트, 예상 라인업 관련 질문
+        - review: 이미 끝난 경기의 결과, 하이라이트, 분석, 결정적 장면 관련 질문
+        - performance: 특정 선수나 팀의 최근 활약상, 폼, 스탯, 평가 관련 질문
+        - general: 위의 5가지에 해당하지 않는 모든 일반적인 정보 질문 (예: "프리미어리그 최근 소식 알려줘")
+
+        **다른 설명 없이, 아래 6개의 단어 중 하나만 출력해야 합니다.**
+        transfer / injury / preview / review / performance / general
+
+        사용자 질문: "{q}"
+        분류:
+        """
+    try:
+        load_dotenv()
+        response = openai.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.0,
+        )
+        result = response.choices[0].message.content.strip().lower()
+        
+        valid_categories = {"transfer", "injury", "preview", "review", "performance", "general"}
+        return result if result in valid_categories else "general"
+    except Exception as e:
+        print(f"뉴스 유형 분류 중 오류 발생: {e}")
+        return "general"
+
+# 뉴스 요약에서 카테고리 분류에 따라 시스템 메시지 분류
+def _build_chain_for_news(category: str):
+    """
+    분류된 카테고리에 따라 최적화된 LangChain 프롬프트와 체인을 생성합니다.
+    """
+    system_message = ""
+    if category == "transfer":
+        system_message = (
+            "당신은 이적 시장 전문가입니다. 제공된 최신 뉴스 기사들을 바탕으로, "
+            "사용자가 질문한 이적설의 핵심 내용을 사실 기반으로 요약해야 합니다. "
+            "특히 **'선수 이름', '관련 구단', '예상 이적료/조건', '루머의 출처나 신뢰도'**에 초점을 맞춰 답변을 구조화하세요. "
+            "추측은 최소화하고, 기사에 언급된 내용만으로 답변하세요."
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+        )
+    elif category == "injury":
+        system_message = (
+            "당신은 구단의 공식 의료팀처럼 보고하는 AI입니다. 주어진 뉴스들을 근거로, "
+            "사용자가 질문한 선수의 상태에 대해 명확하고 간결하게 보고해야 합니다. "
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+            "**'선수 이름', '부상 부위 및 심각도', '예상 결장 기간 또는 복귀 시점'**을 중심으로 정리하여 답변하세요."
+        )
+    elif category == "preview":
+        system_message = (
+            "당신은 전술 분석가입니다. 제공된 정보들을 종합하여 다가올 경기를 심도 있게 예측하세요. "
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+            "**'핵심 관전 포인트', '팀별 예상 전술 및 라인업', '주목해야 할 키 플레이어'**를 중심으로 분석하고, "
+            "객관적인 데이터에 기반하여 경기 결과를 예측하세요."
+        )
+    elif category == "review":
+        system_message = (
+            "당신은 스포츠 기자입니다. 주어진 기사들을 바탕으로 끝난 경기를 생생하게 리뷰하세요. "
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+            "**'최종 스코어', '득점/도움 기록', '경기의 흐름을 바꾼 결정적 순간(터닝 포인트)', '선수별 평점 및 활약상'**을 "
+            "중심으로 경기를 요약하고 분석하여 전달하세요."
+        )
+    elif category == "performance":
+        system_message = (
+            "당신은 데이터 분석가이자 축구 해설가입니다. 제공된 뉴스 기사들을 바탕으로, "
+            "사용자가 질문한 선수나 팀의 최근 경기력(Performance)을 객관적으로 평가해야 합니다. "
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+            "**'최근 경기 스탯(골, 도움 등)', '장점과 단점', '전문가 및 언론의 평가'**를 종합하여 답변하세요."
+        )
+    else: # general
+        system_message = (
+            "당신은 친절한 축구 전문 AI 챗봇입니다. "
+            "제공된 최신 뉴스 기사들을 바탕으로 사용자의 질문에 대해 가장 관련성 높은 정보를 찾아 명확하게 요약하여 답변해주세요. "
+            "항상 객관적인 사실에 기반하여 정보를 전달해야 합니다."
+            "주어진 뉴스 본문의 내용만을 사용하여 답변을 생성해야 합니다. 본문에 명시적으로 언급되지 않은 정보는 절대 추가하거나 추론해서는 안 됩니다."
+        )
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", system_message),
+        ("human", "아래는 질문에 답변하는 데 필요한 뉴스 기사들의 내용입니다.\n\n---\n{context}\n---\n\n이 내용을 바탕으로 다음 질문에 답변해주세요:\n{input}")
+    ])
+    
+    return prompt | llm | parser
 
 # -------------------------
 # 체인 구성
@@ -829,11 +1080,11 @@ def on_end_change(start_s: str | None, end_s: str | None):
 def ask_question(question: str, start_date: str | None = None, end_date: str | None = None, hard_only: bool = False):
 
     # BM25 최신화
-    refresh_bm25_if_stale()
+    build_global_bm25()
 
-    if vector_retriever is None or rag_chain is None:
-        return ("❌ 시스템이 아직 초기화되지 않았습니다. 잠시 후 다시 시도해주세요.", "")
-
+    if vector_retriever is None:
+        yield "❌ 시스템이 아직 초기화되지 않았습니다. 잠시 후 다시 시도해주세요.", "", {}, gr.update(visible=False)
+        return
     try:
         # 0) UI 날짜 입력 파싱
         sd = _parse_date_input(start_date)
@@ -850,8 +1101,9 @@ def ask_question(question: str, start_date: str | None = None, end_date: str | N
         bm_docs = bm25_global.invoke(gpt_translate_korean_to_english(q)) if bm25_global is not None else []
 
         if not vector_docs and not bm_docs:
-            return ("관련 문서를 찾지 못했습니다. links.json을 업데이트하고 임베딩을 다시 생성해주세요.", "")
-
+            yield "관련 문서를 찾지 못했습니다. links.json을 업데이트하고 임베딩을 다시 생성해주세요.", "", {}, gr.update(visible=False)
+            return
+        
         # 3) (날짜 후보 보강) 날짜 지정 시, 전 코퍼스에서 해당 날짜 문서 추가
         # bm25_all_docs: 전체 문서 목록 (Chroma에 저장된 모든 문서의 내용과 메타데이터)
         result_lists = [vector_docs, bm_docs] # 검색해서 나온 결과를 합침
@@ -896,19 +1148,39 @@ def ask_question(question: str, start_date: str | None = None, end_date: str | N
         else:
             final_docs = candidates[:final_n]
 
-        # 7) 컨텍스트 → LLM
-        context = "\n\n".join(d.page_content for d in final_docs)
-        result = rag_chain.invoke({"context": context, "input": question})
-
         global last_final_docs
         last_final_docs = final_docs
 
-
         links_html = _links_collapsible_html(final_docs, max_items_show=int(config.get("links_head_show", 5)))
-        return result, links_html
+        
+
+        # 7-1. 질문 유형 분류 및 체인 생성
+        category = _detect_news_category(question)
+        print(f"뉴스 질문 유형 분류 결과: {category}")
+        rag_chain = _build_chain_for_news(category)
+        
+        # 7-2. 컨텍스트 생성 및 .stream()으로 스트리밍 호출
+        context = "\n\n".join(d.page_content for d in final_docs)
+        stream = rag_chain.stream({"context": context, "input": question})
+        
+        # 7-3. 스트림을 반복하며 UI에 점진적으로 결과 전송 (yield)
+        full_response = ""
+        for chunk in stream:
+            full_response += chunk
+            
+            interaction_data = {
+                "question": question,
+                "answer": full_response,
+                "contexts": final_docs
+            }
+            # 미리 만들어둔 links_html을 함께 yield 합니다.
+            yield full_response, links_html, interaction_data, gr.update(visible=True)
 
     except Exception as e:
-        return (f"❌ 처리 중 오류 발생: {e}", "")
+        import traceback
+        traceback.print_exc()
+        error_message = f"❌ 처리 중 오류 발생: {e}"
+        yield error_message, "", {}, gr.update(visible=False)
 
 
 
@@ -967,6 +1239,28 @@ def _ingest_loop():
 
 
 
+def enable_end_date(start_date_value):
+    """시작일이 선택되면 종료일 캘린더를 활성화합니다."""
+    if start_date_value:
+        # 종료일을 활성화하고, 사용 편의를 위해 시작일과 같은 날짜로 초기값을 설정합니다.
+        return gr.update(interactive=True, value=start_date_value) 
+    return gr.update(interactive=False)
+
+# 날짜 유효성을 검사하는 함수
+def validate_end_date(start_str, end_str):
+    """종료일이 시작일보다 이전이면 시작일 날짜로 강제 조정합니다."""
+    try:
+        # ★★★ 수정: datetime.datetime -> datetime 으로 변경 ★★★
+        start_date = datetime.strptime(start_str, "%Y-%m-%d")
+        end_date = datetime.strptime(end_str, "%Y-%m-%d")
+        if end_date < start_date:
+            # 경고 메시지를 추가하여 사용자에게 알리는 것이 좋습니다.
+            gr.Warning("종료일이 시작일보다 빠릅니다. 종료일을 시작일로 자동 조정합니다.")
+            return start_date.strftime("%Y-%m-%d")
+    except (ValueError, TypeError):
+        return end_str # 날짜 형식이 아니면 기존 값을 그대로 둠
+    return end_str
+
 
 # -------------------------
 # Gradio UI (원형 유지)
@@ -1000,21 +1294,60 @@ with gr.Blocks(
                     choices=["날짜 지정 안함", "오늘", "어제", "최근 7일", "최근 30일", "이번 주", "이번 달", "지난 달"],
                     value="날짜 지정 안함"
                 )
-                start_date_input = Calendar(label="시작일", type="string", value=None)
-                end_date_input   = Calendar(label="종료일", type="string", value=None)
+
+                # with gr.Row():
+                #     with gr.Column(scale=1, min_width=240):
+                #         start_date_input = Calendar(label="시작일", type="string", value="")
+                #     with gr.Column(scale=1, min_width=240):
+                #         end_date_input   = Calendar(label="종료일", type="string", value="")
+                
+                with gr.Row():
+                    with gr.Column(scale=1, min_width=240):
+                        start_date_input = Calendar(label="시작일", type="string", value="")
+                    with gr.Column(scale=1, min_width=240):
+                        # 수정 1: `interactive=False`를 추가해 처음엔 비활성화 상태로 만듭니다.
+                        end_date_input = Calendar(label="종료일", type="string", value="", interactive=False)
+
+
                 hard_only_check  = gr.Checkbox(label="날짜 범위만 보기(하드 필터)", value=False)
                 submit_button    = gr.Button("🤖 답변 받기")
-                answer_output    = gr.Textbox(label="📝 AI 답변")
+                answer_output = gr.Textbox(label="📝 AI 답변", lines=10, max_lines=10)
                 links_output     = gr.HTML(label="관련 링크")
 
+                # 1. 질문/답변/컨텍스트를 임시 저장할 보이지 않는 State 추가
+                last_interaction_state = gr.State({})
+
+                # 2. 피드백 버튼 추가 (기본적으로는 숨겨둠)
+                with gr.Row(visible=False) as feedback_buttons_row:
+                    gr.Markdown("--- \n**이 답변이 만족스러우신가요?**")
+                    satisfied_btn = gr.Button("👍 만족")
+                    dissatisfied_btn = gr.Button("👎 불만족")
+
+                with gr.Group(visible=False) as feedback_reason_group:
+                    feedback_reason_textbox = gr.Textbox(
+                        label="📝 불만족스러운 이유를 알려주세요.",
+                        placeholder="예: 답변에 중요한 정보가 빠졌어요 / 내용이 사실과 달라요"
+                    )
+                    submit_feedback_btn = gr.Button("✔️ 피드백 제출")
                 # 변경 시 검증: 반환값으로 해당 컴포넌트를 업데이트
+                # start_date_input.change(
+                #     fn=on_start_change,
+                #     inputs=[start_date_input, end_date_input],
+                #     outputs=[start_date_input],
+                # )
+                # end_date_input.change(
+                #     fn=on_end_change,
+                #     inputs=[start_date_input, end_date_input],
+                #     outputs=[end_date_input],
+                # )
                 start_date_input.change(
-                    fn=on_start_change,
-                    inputs=[start_date_input, end_date_input],
-                    outputs=[start_date_input],
+                    fn=enable_end_date,
+                    inputs=[start_date_input],
+                    outputs=[end_date_input],
                 )
+                # 종료일 변경 시 -> 날짜 유효성 검사
                 end_date_input.change(
-                    fn=on_end_change,
+                    fn=validate_end_date,
                     inputs=[start_date_input, end_date_input],
                     outputs=[end_date_input],
                 )
@@ -1039,11 +1372,15 @@ with gr.Blocks(
             with gr.Column(scale=3, min_width=420):
                 gr.Markdown("<div class='fld'>리그 필터</div>")
                 with gr.Row(elem_classes="pillwrap"):
-                    cb_epl     = gr.Checkbox(label="🏴 Premier League", value=True, show_label=False)
+                    # ★ 수정: 기존 5대 리그 체크박스 뒤에 유럽 대항전 체크박스 추가
+                    cb_epl     = gr.Checkbox(label="🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League", value=True, show_label=False)
                     cb_laliga  = gr.Checkbox(label="🇪🇸 LaLiga",          value=True, show_label=False)
                     cb_seriea  = gr.Checkbox(label="🇮🇹 Serie A",         value=True, show_label=False)
                     cb_bundes  = gr.Checkbox(label="🇩🇪 Bundesliga",      value=True, show_label=False)
                     cb_ligue1  = gr.Checkbox(label="🇫🇷 Ligue 1",         value=True, show_label=False)
+                    cb_ucl     = gr.Checkbox(label="🇪🇺 UCL",             value=True, show_label=False)
+                    cb_uel     = gr.Checkbox(label="🇪🇺 UEL",             value=True, show_label=False)
+                    cb_uecl    = gr.Checkbox(label="🇪🇺 UECL",            value=True, show_label=False)
                 gr.Markdown("<div class='subtle'>체크 해제된 리그는 목록에서 제외됩니다.</div>")
 
             # (D) 실행 버튼
@@ -1059,7 +1396,8 @@ with gr.Blocks(
 
         load_btn.click(
             fn=ui_load_matches_selectable,
-            inputs=[match_date, cb_epl, cb_laliga, cb_seriea, cb_bundes, cb_ligue1],  # ★ 수정
+            # ★ 수정: inputs 리스트에 새로 만든 체크박스 변수(cb_ucl 등) 추가
+            inputs=[match_date, cb_epl, cb_laliga, cb_seriea, cb_bundes, cb_ligue1, cb_ucl, cb_uel, cb_uecl],
             outputs=[matches_html, match_select, matches_state]
         )
 
@@ -1088,7 +1426,27 @@ with gr.Blocks(
     submit_button.click(
         ask_question,
         inputs=[question_input, start_date_input, end_date_input, hard_only_check],
-        outputs=[answer_output, links_output]
+        # 출력에 feedback_buttons_row 추가
+        outputs=[answer_output, links_output, last_interaction_state, feedback_buttons_row]
+    )
+
+    # 4. 새로 만든 피드백 버튼들의 이벤트 연결
+    satisfied_btn.click(
+        fn=save_feedback,
+        inputs=[last_interaction_state, gr.State("satisfied")],
+        outputs=[feedback_buttons_row, feedback_reason_group] # 버튼과 이유 입력창 모두 숨김
+    )
+
+    dissatisfied_btn.click(
+        fn=lambda: gr.update(visible=True),
+        inputs=None,
+        outputs=[feedback_reason_group]
+    )
+
+    submit_feedback_btn.click(
+        fn=save_feedback,
+        inputs=[last_interaction_state, gr.State("dissatisfied"), feedback_reason_textbox],
+        outputs=[feedback_buttons_row, feedback_reason_group]
     )
 
     # 버튼으로 화면 전환
@@ -1105,8 +1463,30 @@ with gr.Blocks(
 
     demo.load(create_rag_chain, inputs=None, outputs=status_output)
 
+# === 백그라운드 스케줄러 실행을 위한 함수 ===
+def _background_fetcher_loop():
+    """주기적으로 데이터 수집 함수를 호출하는 무한 루프"""
+    while True:
+        try:
+            fetch_and_save_finished_matches()
+        except Exception as e:
+            print(f"[백그라운드 스레드 오류] 예상치 못한 오류 발생: {e}")
+        
+        # 다음 실행까지 대기
+        print(f"백그라운드: 다음 확인까지 {FETCH_INTERVAL_SECONDS}초 대기합니다.")
+        time.sleep(FETCH_INTERVAL_SECONDS)
+
+# === Gradio 앱 실행 전, 백그라운드 스레드 시작 ===
+# _thread_started 플래그를 사용하여 스레드가 한 번만 시작되도록 보장
+if not globals().get("_thread_started", False):
+    # daemon=True: 메인 프로그램(Gradio 앱)이 종료되면 스레드도 함께 종료됨
+    fetcher_thread = threading.Thread(target=_background_fetcher_loop, daemon=True)
+    fetcher_thread.start()
+    globals()["_thread_started"] = True
+    print("[시스템] 백그라운드 경기 데이터 수집 스레드가 시작되었습니다.")
+
 # Gradio Blocks 정의가 모두 끝난 뒤, launch 직전에 추가
-if AUTO_INGEST and not globals().get("_ingest_thread_started", False):
+if AUTO_INGEST and not globals().get("_ingest_thread_started", False):#
     threading.Thread(target=_ingest_loop, daemon=True).start()
     globals()["_ingest_thread_started"] = True
     print(f"[ingest] auto-run enabled every {INGEST_EVERY_MIN} min")

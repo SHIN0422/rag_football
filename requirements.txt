@@ -1,0 +1,14 @@
+gradio
+langchain
+langchain-community
+langchain-openai
+chromadb
+huggingface-hub
+sentence-transformers
+torch
+transformers
+langchain-huggingface
+gradio-flatpickr-calendar
+beautifulsoup4
+langchain-chroma
+rank_bm25
