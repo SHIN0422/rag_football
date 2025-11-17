@@ -1,0 +1,5 @@
+Model,Custom_Relevancy
+baseline_vector,0.9
+baseline_bm25,0.7899999999999999
+hybrid_rrf,0.95
+final_rrf_rerank,0.9366666666666668
